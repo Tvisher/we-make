@@ -1,0 +1,32 @@
+// Size
+$mainFontSize: 18px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+$desktopWidth: 1760px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 380px;
+
+// Main color
+$brand-black: #1d1d1f;
+$brand-gray: #6e6e73;
+$brand-primary: #2179df;
+$brand-white: #ffffff;
+
+// Font
+$mainFont: "Gilroy";
+$mainFontColor: $brand-white;
+
+@mixin pruning($c) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $c;
+  -webkit-box-orient: vertical;
+  line-clamp: $c;
+  box-orient: vertical;
+}
