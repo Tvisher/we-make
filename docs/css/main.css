@@ -1103,6 +1103,14 @@ button {
   font-size: 36px;
   font-weight: 500;
   line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.section-descr {
+  color: #6e6e73;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .header__wrapper {
@@ -1204,6 +1212,10 @@ button {
   transform: translateX(-5px);
 }
 
+.slider-section {
+  margin-bottom: 130px;
+}
+
 .slider-section__slider {
   overflow: visible;
   padding-top: 8vh;
@@ -1225,9 +1237,9 @@ button {
 }
 
 .slider-section__slider .main-slider__title {
-  margin-bottom: 2 0px;
+  margin-bottom: 20px;
   line-height: 140%;
-  font-size: 64px;
+  font-size: calc((1vw + 1vh) * 0.8 * 3);
   display: flex;
 }
 
@@ -1256,7 +1268,7 @@ button {
 }
 
 .slider-section__slider .main-slider__descr {
-  font-size: 36px;
+  font-size: calc((1vw + 1vh) * 0.8 * 1.55);
 }
 
 .slider-section__slider .main-slider__nameplate {
@@ -1299,7 +1311,7 @@ button {
 }
 
 .main-slider__navigation {
-  margin-top: 10vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1313,6 +1325,7 @@ button {
 }
 
 .main-slider__navigation .swiper-pagination-progressbar {
+  width: 100%;
   position: relative;
   background: #505050;
   border-radius: 4px;
@@ -1391,7 +1404,7 @@ button {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  transform: translateX(-50%);
+  transform: translate(-20%, -100%);
   left: 0;
   bottom: 0;
 }
@@ -1483,6 +1496,41 @@ button {
 .swiper-fade .swiper-slide-active .swiper-slide-active .main-slider__title .filled::before {
   height: 100%;
   width: 100%;
+}
+
+.slider__footer {
+  margin-left: -100px;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__footer .slider__footer-links {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slider__footer .slider__footer-links a {
+  padding: 5px 0;
+  display: flex;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.slider__footer .slider__footer-links a:first-child {
+  margin-right: 3vw;
+}
+
+.slider__footer .slider__footer-links a .nameplate {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.slider__footer .slider__footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {

@@ -6,6 +6,7 @@ import Swiper, {
     Pagination,
     Autoplay,
     EffectFade,
+    Keyboard
 } from 'swiper';
 
 import AOS from 'aos';
@@ -53,7 +54,8 @@ const mainSlider = new Swiper('.main-slider', {
     modules: [Pagination,
         EffectFade,
         Navigation,
-        Autoplay
+        Autoplay,
+        Keyboard
     ],
     speed: 800,
     slidesPerView: 1,
@@ -72,6 +74,10 @@ const mainSlider = new Swiper('.main-slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
     },
     on: {
         resize(swiper) {
