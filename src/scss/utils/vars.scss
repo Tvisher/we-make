@@ -18,7 +18,7 @@ $brand-white: #ffffff;
 // Font
 $mainFont: "Gilroy";
 $mainFontColor: $brand-white;
-$index: calc((1vw + 1vh) * 0.8);
+$index: calc(1vw + 1vh);
 
 @mixin pruning($c) {
   overflow: hidden;

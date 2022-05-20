@@ -105,6 +105,52 @@ const mainSlider = new Swiper('.main-slider', {
 });
 
 
+const rewiewsSlider = new Swiper('.rewiews__slider', {
+    modules: [EffectFade, Autoplay, Navigation],
+    speed: 800,
+    slidesPerView: 1,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 6000,
+    },
+    on: {
+        resize(swiper) {
+            swiper.update();
+        },
+        init(swiper) {
+            let clidesCount = String(swiper.slides.length);
+            if (clidesCount < 2) {
+                return;
+            }
+            let animationTime = swiper.params.autoplay.delay / 1000;
+            let diagramSpiner = swiper.$el[0].querySelector('.slider-timer');
+            diagramSpiner.querySelector('.slider-timer-path').style.animationDuration = `${animationTime}s`;
+            diagramSpiner.classList.add('start');
+        },
+
+        slideChange(swiper) {
+            let sliderSpeed = swiper.params.speed;
+            let diagramSpiner = swiper.$el[0].querySelector('.slider-timer');
+            diagramSpiner.classList.remove('start');
+            setTimeout(() => {
+                diagramSpiner.classList.add('start');
+            }, sliderSpeed);
+        }
+    },
+    breakpoints: {
+        768: {
+        }
+    }
+})
+
+
 window.addEventListener('load', (e) => {
     mainSlider.init();
     document.body.style.opacity = 1;
