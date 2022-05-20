@@ -49,18 +49,19 @@ baseFunction.testWebP();
 const generalSlidesCount = document.querySelector('.general-counter');
 const currentSlideNum = document.querySelector('.current-counter');
 // Слайдер полноэкранный
-const fullscreenSlider = new Swiper('.main-slider', {
+const mainSlider = new Swiper('.main-slider', {
     modules: [Pagination,
         EffectFade,
         Navigation,
         Autoplay
     ],
-    speed: 1200,
+    speed: 800,
     slidesPerView: 1,
     effect: 'fade',
     fadeEffect: {
         crossFade: true
     },
+    init: false,
     autoplay: {
         delay: 6000,
     },
@@ -99,6 +100,7 @@ const fullscreenSlider = new Swiper('.main-slider', {
 
 
 window.addEventListener('load', (e) => {
+    mainSlider.init();
     document.body.style.opacity = 1;
 });
 // Инит и опции библиотеки анимаций

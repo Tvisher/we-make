@@ -210,9 +210,11 @@ li {
     align-items: center;
     gap: 30px;
   }
-  .slide__text,
+  .slide__text {
+    flex: 1 0 calc(55% - 30px);
+  }
   .slide__image {
-    flex: 1 0 calc(50% - 30px);
+    flex: 1 0 calc(45% - 30px);
   }
 
   .main-slider__title {
@@ -226,7 +228,21 @@ li {
       display: flex;
       align-items: center;
       padding: 0px 24px;
-      background-color: $brand-primary;
+      position: relative;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: opacity 0.4s ease-in-out 0s, transform 0.8s ease-in-out 0s;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        transition: height 0.8s ease-in-out 0s, width 0.8s ease-in-out 0.3s;
+        background-color: $brand-primary;
+        z-index: -1;
+      }
     }
   }
   .main-slider__descr {
@@ -296,8 +312,23 @@ li {
     margin: 0;
     transform: none;
     padding: 0 10px;
+    transition: opacity 0.3s ease-in-out;
     &::after {
       display: none;
+    }
+    svg {
+      transition: transform 0.3s ease-in-out;
+      path {
+        transition: fill 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      svg {
+        transform: scale(1.1);
+        path {
+          fill: $brand-primary;
+        }
+      }
     }
   }
   .swiper-pagination {
@@ -348,6 +379,24 @@ li {
   }
 }
 
+.top-to-down {
+  animation: topToDonw 3s ease-in-out infinite 0s;
+}
+
+@keyframes topToDonw {
+  0% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
 @keyframes shadowAnim {
   0% {
     opacity: 1;
@@ -376,10 +425,22 @@ li {
   height: 332px;
   border-radius: 50%;
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 40%;
   transform: translateY(-50%);
   box-shadow: 0px 0px 150px 100px rgba(4, 99, 241, 0.4);
   background-color: rgba(4, 99, 241, 0.4);
   animation: shadowAnimv2 6s ease-in-out infinite 0s;
+}
+
+.swiper-fade .swiper-slide-active,
+.swiper-fade .swiper-slide-active .swiper-slide-active {
+  .main-slider__title .filled {
+    transform: translateY(0%);
+    opacity: 1;
+    &::before {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
