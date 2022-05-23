@@ -277,6 +277,7 @@ li {
 }
 .header__lang {
   margin: 0px 10px;
+  display: none;
 }
 
 .phone-block {
@@ -1192,6 +1193,9 @@ li {
   width: fit-content;
   color: #fff;
   font-size: 36px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .form__title {
   font-weight: 500;

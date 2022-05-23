@@ -15,8 +15,6 @@ import IMask from 'imask';
 // Проверка поддержки webP
 baseFunction.testWebP();
 
-// Анимация инпутов при фокусе
-
 const generalSlidesCount = document.querySelector('.general-counter');
 const currentSlideNum = document.querySelector('.current-counter');
 // Слайдер полноэкранный

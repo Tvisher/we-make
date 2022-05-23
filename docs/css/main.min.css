@@ -1290,6 +1290,7 @@ button {
 
 .header__lang {
   margin: 0px 10px;
+  display: none;
 }
 
 .phone-block {
@@ -2168,6 +2169,10 @@ button {
   width: fit-content;
   color: #fff;
   font-size: 36px;
+}
+
+.form-section__link:hover {
+  text-decoration: underline;
 }
 
 .form__title {
