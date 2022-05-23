@@ -15,37 +15,7 @@ import IMask from 'imask';
 // Проверка поддержки webP
 baseFunction.testWebP();
 
-
 // Анимация инпутов при фокусе
-(function getAnimationinputs() {
-    const stylinginputs = document.querySelectorAll('[data-styles-field]');
-    if (stylinginputs) {
-        stylinginputs.forEach(input => {
-            const inputpParent = input.parentNode;
-            const transformtext = inputpParent.querySelector('.styles-text');
-            input.addEventListener('focus', (e) => {
-                inputpParent.classList.add('focus');
-                transformtext && transformtext.classList.add('fixed');
-
-                input.addEventListener('blur', (e) => {
-                    const inputValue = e.target.value.trim();
-                    inputpParent.classList.remove('focus');
-                    if (inputValue.length === 0) {
-                        transformtext.classList.remove('fixed');
-                    }
-                }, { once: true });
-            });
-            //Добавление класса к инпуту если он заполнен
-            const inputValue = input.value.trim();
-            console.log(inputValue);
-            if (inputValue.length === 0) {
-                transformtext.classList.remove('fixed');
-            } else {
-                transformtext.classList.add('fixed');
-            }
-        });
-    }
-}())
 
 const generalSlidesCount = document.querySelector('.general-counter');
 const currentSlideNum = document.querySelector('.current-counter');
@@ -103,8 +73,6 @@ const mainSlider = new Swiper('.main-slider', {
         }
     }
 });
-
-
 const rewiewsSlider = new Swiper('.rewiews__slider', {
     modules: [EffectFade, Autoplay, Navigation],
     speed: 800,
@@ -161,8 +129,6 @@ const aboutSectionSlider = new Swiper('.about-section__slider', {
     },
 });
 
-
-
 window.addEventListener('load', (e) => {
     mainSlider.init();
     document.body.style.opacity = 1;
@@ -196,7 +162,6 @@ AOS.init({
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
-
 //логика работы меню бургер
 document.body.addEventListener('click', (e) => {
     const target = e.target;
@@ -206,7 +171,6 @@ document.body.addEventListener('click', (e) => {
         document.body.classList.toggle('hidden');
     }
 });
-
 // Маска на номера телефона
 document.querySelectorAll('input[type="tel"]').forEach(input => {
     const mask = IMask(input, {
