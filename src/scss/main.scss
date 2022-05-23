@@ -930,6 +930,7 @@ li {
 .about-section {
   padding-top: 150px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .about-section__slider {
@@ -995,5 +996,122 @@ li {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+}
+
+.we-do {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  .bg-wrap .blue-bg {
+    transform: translate(75%, 90%);
+    left: 0;
+    top: 50%;
+  }
+}
+.we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  .list-item {
+    margin: 15px;
+    width: 406px;
+    height: 406px;
+    border-radius: 50%;
+    padding: 100px 60px;
+    border: 1px solid $brand-primary;
+    transition: background-color 0.3s ease-in-out;
+    svg path {
+      transition: fill 0.3s ease-in-out;
+    }
+    &:hover {
+      background-color: $brand-primary;
+      .list-item__descr {
+        color: #ffffff;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+
+    &.grad {
+      border: none;
+      position: relative;
+      background: rgb(4, 99, 241);
+      background: linear-gradient(
+        0deg,
+        rgba(4, 99, 241, 1) 0%,
+        rgba(255, 33, 33, 1) 33%,
+        rgba(37, 241, 4, 1) 66%,
+        rgba(241, 217, 4, 1) 100%
+      );
+      &::before {
+        border-radius: 50%;
+        transform: scale(0.99);
+        z-index: 1;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #202020;
+        z-index: 1;
+      }
+      .list-item__wrap {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+  .list-item__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .list-item__descr {
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 30px;
+    color: $brand-gray;
+    font-size: 14px;
+  }
+  .list-item__link {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.partners {
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+
+.partners__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  .partners__icons {
+    flex: 0 0 66.66%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    .partners__icon {
+      background: linear-gradient(146.39deg, #292a2f 0%, #4b4c50 100%);
+      overflow: hidden;
+      width: 262px;
+      height: 148px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }
