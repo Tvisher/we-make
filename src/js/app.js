@@ -137,7 +137,7 @@ window.addEventListener('load', (e) => {
         delayBeforeStart: 0,
         direction: 'left',
         duplicated: true,
-        pauseOnHover: true,
+        // pauseOnHover: true,
     });
 });
 // Инит и опции библиотеки анимаций
