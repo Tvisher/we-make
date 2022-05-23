@@ -1532,7 +1532,7 @@ button {
   align-items: center;
 }
 
-.slider-action .box-shadow {
+.box-shadow {
   transform: translateY(5px);
   width: 0px;
   height: 0px;
@@ -2051,6 +2051,7 @@ button {
 }
 
 .we-do__list .list-item__title {
+  font-weight: 500;
   font-size: 28px;
   margin-bottom: 8px;
 }
@@ -2109,6 +2110,22 @@ button {
 .warranty {
   padding-top: 75px;
   padding-bottom: 100px;
+  position: relative;
+}
+
+.warranty .box-shadow {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+
+.warranty .blue-bg {
+  top: inherit;
+  bottom: 20%;
+  right: 10%;
+  opacity: 0.6;
+  width: 100px;
+  height: 100px;
 }
 
 .warranty__wrapper {
@@ -2122,6 +2139,7 @@ button {
 
 .warranty__wrapper .warranty__text {
   font-size: 36px;
+  font-weight: 500;
 }
 
 .warranty__wrapper img {
@@ -2140,16 +2158,20 @@ button {
 }
 
 .form-section__title {
+  font-weight: 500;
   font-size: 64px;
   margin-bottom: 30px;
 }
 
 .form-section__link {
+  font-weight: 500;
+  width: fit-content;
   color: #fff;
   font-size: 36px;
 }
 
 .form__title {
+  font-weight: 500;
   font-size: 36px;
   margin-bottom: 40px;
   max-width: 406px;
