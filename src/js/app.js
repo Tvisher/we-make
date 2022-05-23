@@ -148,12 +148,33 @@ const rewiewsSlider = new Swiper('.rewiews__slider', {
         768: {
         }
     }
-})
+});
+
+const aboutSectionSlider = new Swiper('.about-section__slider', {
+    modules: [Navigation],
+    speed: 800,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next.outside',
+        prevEl: '.swiper-button-prev.outside',
+    },
+});
+
 
 
 window.addEventListener('load', (e) => {
     mainSlider.init();
     document.body.style.opacity = 1;
+    $('.marquee').marquee({
+        startVisible: true,
+        duration: 20000,
+        gap: 50,
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: true,
+        pauseOnHover: true,
+    });
 });
 // Инит и опции библиотеки анимаций
 AOS.init({
@@ -192,6 +213,9 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
         mask: '+{7}(000) 000-00-00'
     });
 });
+
+
+
 
 
 
