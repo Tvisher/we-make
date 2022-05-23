@@ -65,7 +65,7 @@ const mainSlider = new Swiper('.main-slider', {
     },
     init: false,
     autoplay: {
-        delay: 6000,
+        delay: 4000,
     },
     pagination: {
         el: '.swiper-pagination',
@@ -183,9 +183,6 @@ document.body.addEventListener('click', (e) => {
         target.closest('[data-burger-menu]').classList.toggle('active');
         document.querySelector('[data-header-menu]').classList.toggle('active');
         document.body.classList.toggle('hidden');
-    }
-    if (target.closest('.fullscreen-slider__desc')) {
-        target.closest('.fullscreen-slider__desc').classList.add('open');
     }
 });
 

@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <div class="mobile-menu" data-header-menu>
+        <div class="mobile-menu__wrapper">
+            <ul>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu__phones">
+                <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                <span class="phone_nameplate">Офис</span>
+                <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                <span class="phone_nameplate">Отдел маркетинга</span>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header__wrapper">
@@ -34,9 +50,20 @@
                     </select>
                     <div class="phone-block">
                         <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
-                        <div class="phone-block__dropdown"></div>
+                        <div class="phone-ico">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" transform="matrix(-1 0 0 1 32 0)" fill="#ffffff"></rect>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0158 8.04343C23.5117 8.16402 23.8861 8.57327 23.9751 9.09209C24.0219 9.36549 23.9675 10.4894 23.8739 11.1821C23.4889 14.0298 22.3912 16.5184 20.5288 18.7657C20.1951 19.1684 19.1684 20.1951 18.7658 20.5287C16.5184 22.3911 14.0298 23.4888 11.1821 23.8739C10.4842 23.9682 9.36568 24.0219 9.08859 23.9744C8.55884 23.8836 8.14465 23.4906 8.03528 22.9751C8.01194 22.8651 8.00015 22.283 8.00015 21.2395C8.00015 19.5664 8.00672 19.481 8.15847 19.1836C8.24444 19.0151 8.45034 18.7949 8.60875 18.7021C8.84706 18.5624 8.99931 18.5283 9.51578 18.4988C10.4869 18.4433 11.1088 18.3438 11.8899 18.119C12.2882 18.0043 12.3516 17.9944 12.6119 18.0057C12.8637 18.0168 12.9218 18.031 13.1041 18.1264C13.2178 18.1858 13.7327 18.5544 14.2482 18.9454C14.7637 19.3365 15.1956 19.6564 15.208 19.6564C15.2493 19.6564 15.8547 19.3036 16.2189 19.0674C17.5704 18.1908 18.5994 17.0872 19.4387 15.6142C19.6286 15.2808 19.6616 15.2031 19.6324 15.1564C19.6131 15.1254 19.2847 14.6874 18.9026 14.1829C18.5206 13.6785 18.1757 13.209 18.1364 13.1396C18.097 13.0702 18.0419 12.924 18.0138 12.8146C17.9495 12.5635 17.9683 12.3989 18.1245 11.8439C18.3411 11.0738 18.4481 10.3957 18.4841 9.56262C18.5049 9.08027 18.5534 8.84596 18.6755 8.63759C18.8499 8.33996 19.1955 8.09509 19.5307 8.03149C19.778 7.98459 22.8166 7.99499 23.0158 8.04343Z" fill="#2179df"></path>
+                            </svg>
+                        </div>
+                        <div class="phone-block__dropdown">
+                            <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                            <span class="phone_nameplate">Офис</span>
+                            <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                            <span class="phone_nameplate">Отдел маркетинга</span>
+                        </div>
                     </div>
-                    <div class="burger-menu">
+                    <div class="burger-menu" data-burger-menu>
                         <div class="burger-menu__ico">
                             <span></span>
                             <span></span>
@@ -354,7 +381,9 @@
                         </div>
                     </a>
                 </div>
-                <a href="#" class="btn fillBtn" style="margin:auto;">Все проекты (300)</a>
+                <div class="all-project">
+                    <a href="#" class="btn fillBtn" style="margin:auto;">Все проекты (300)</a>
+                </div>
                 <div class="bg-wrap">
                     <div class="blue-bg"></div>
                 </div>
