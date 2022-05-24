@@ -2369,6 +2369,10 @@ button {
     grid-row-end: 10;
   }
 
+  .works-list .works-list__item.large .fillBtn {
+    display: none;
+  }
+
   .works-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2488,7 +2492,7 @@ button {
 
 @media (max-width: 576px) {
   .swiper-slider__footer {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .warranty__wrapper .warranty__text {

@@ -619,6 +619,9 @@ li {
       }
       @media (max-width: 1024px) {
         grid-row-end: 10;
+        .fillBtn {
+          display: none;
+        }
       }
     }
     height: 0;
@@ -778,7 +781,7 @@ li {
 
 @media (max-width: 576px) {
   .swiper-slider__footer {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
