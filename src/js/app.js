@@ -12,6 +12,10 @@ import Swiper, {
 import AOS from 'aos';
 import IMask from 'imask';
 
+
+import ModalVideo from 'modal-video';
+new ModalVideo('.js-modal-btn', { theme: 'dark' });
+
 // Проверка поддержки webP
 baseFunction.testWebP();
 
