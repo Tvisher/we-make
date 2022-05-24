@@ -2423,6 +2423,10 @@ button {
   object-position: left;
 }
 
+.modal-video-movie-wrap {
+  padding-bottom: 99.9% !important;
+}
+
 @media (max-width: 1440px) {
   .partners__wrapper {
     flex-direction: column;
