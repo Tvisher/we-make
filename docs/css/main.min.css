@@ -1058,14 +1058,15 @@ li {
 .fillBtn:before {
   background-color: #0463f1;
   position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  right: -10px;
+  left: -10px;
+  top: -10px;
+  height: 150%;
+  width: 150%;
   z-index: -1;
   content: "";
   transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 2px solid #0463f1;
 }
 
 .fillBtn:hover:before {
@@ -2403,8 +2404,7 @@ button {
   }
 
   .main-slider__navigation {
-    margin-bottom: 20px;
-    order: -1;
+    padding-bottom: 20px;
   }
 
   .slider-section__slider .slide__text {
@@ -2417,7 +2417,7 @@ button {
     top: 0;
     width: 100%;
     height: 100px;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.1;
   }
 

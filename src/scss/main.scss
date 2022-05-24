@@ -854,8 +854,8 @@ li {
     align-items: flex-start;
   }
   .main-slider__navigation {
-    margin-bottom: 20px;
-    order: -1;
+    padding-bottom: 20px;
+    // order: -1;
   }
   .slider-section__slider .slide__text {
     flex: 0 0 100%;
@@ -866,7 +866,7 @@ li {
     top: 0;
     width: 100%;
     height: 100px;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.1;
   }
   .slider-section__slider {

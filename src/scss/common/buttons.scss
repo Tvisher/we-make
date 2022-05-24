@@ -28,14 +28,15 @@
   &:before {
     background-color: $brand-primary;
     position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    right: -10px;
+    left: -10px;
+    top: -10px;
+    height: 150%;
+    width: 150%;
     z-index: -1;
     content: "";
     transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 2px solid $brand-primary;
   }
   &:hover {
     &:before {
