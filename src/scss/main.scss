@@ -1228,6 +1228,9 @@ li {
     display: flex;
     align-items: center;
     gap: 30px;
+    @media (max-width: 400px) {
+      gap: 20px;
+    }
   }
   .about-section__block {
     flex: 0 0 25%;

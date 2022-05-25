@@ -2870,6 +2870,18 @@ button {
   }
 }
 
+@media (max-width: 400px) {
+  .about-section__wrapper .about-section__block-btns {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .btn {
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 380px) {
   .container {
     padding: 0 10px;
