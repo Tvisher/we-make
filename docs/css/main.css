@@ -2338,6 +2338,7 @@ button {
   overflow: hidden;
   width: 262px;
   height: 148px;
+  padding: 30px;
 }
 
 .partners__wrapper .partners__icons .partners__icon img {
@@ -2697,7 +2698,13 @@ button {
   }
 
   .partners__wrapper .partners__icons .partners__icon {
+    height: 20vw;
     flex: 1 0 calc(50% - 30px);
+    padding: 15px;
+  }
+
+  .partners__wrapper .partners__icons {
+    gap: 15px;
   }
 
   .form-section,
