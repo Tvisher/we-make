@@ -1980,7 +1980,7 @@ button {
 
 .slider-timer-nav .swiper-button-prev,
 .slider-timer-nav .swiper-button-next {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -1993,6 +1993,16 @@ button {
 .slider-timer-nav .swiper-button-prev::after,
 .slider-timer-nav .swiper-button-next::after {
   display: none;
+}
+
+.slider-timer-nav .swiper-button-prev:hover,
+.slider-timer-nav .swiper-button-next:hover {
+  background-color: #0463f1;
+}
+
+.slider-timer-nav .swiper-button-prev:active,
+.slider-timer-nav .swiper-button-next:active {
+  opacity: 0.5;
 }
 
 .slider-timer-nav .slider-timer {

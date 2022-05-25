@@ -785,7 +785,7 @@ li {
   display: flex;
   .swiper-button-prev,
   .swiper-button-next {
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -795,6 +795,12 @@ li {
     margin: 0;
     &::after {
       display: none;
+    }
+    &:hover {
+      background-color: $brand-primary;
+    }
+    &:active {
+      opacity: 0.5;
     }
   }
   .slider-timer {
