@@ -2530,6 +2530,7 @@ button {
 #bg-19,
 #bg-20,
 .gif-bg {
+  transition: all 0.3s ease;
   position: fixed;
   left: 0;
   top: 0;
