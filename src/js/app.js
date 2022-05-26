@@ -29,7 +29,7 @@ const mainSlider = new Swiper('.main-slider', {
         Autoplay,
         Keyboard
     ],
-    speed: 800,
+    speed: 1200,
     slidesPerView: 1,
     effect: 'fade',
     fadeEffect: {
@@ -37,7 +37,7 @@ const mainSlider = new Swiper('.main-slider', {
     },
     init: false,
     autoplay: {
-        delay: 4000,
+        delay: 8000,
     },
     pagination: {
         el: '.swiper-pagination',
