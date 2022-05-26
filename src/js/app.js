@@ -14,7 +14,10 @@ import IMask from 'imask';
 
 
 import ModalVideo from 'modal-video';
-new ModalVideo('.js-modal-btn', { theme: 'dark' });
+new ModalVideo('.js-modal-btn', {
+    theme: 'dark',
+    autoplay: 1,
+});
 
 // Проверка поддержки webP
 baseFunction.testWebP();
