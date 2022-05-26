@@ -1159,6 +1159,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   background-color: #202020;
@@ -2623,6 +2624,60 @@ button {
   z-index: -2;
 }
 
+.who-we {
+  padding: 75px 0;
+}
+
+.who-we__list,
+.why-we__list {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.who-we__list .list-item__descr,
+.why-we__list .list-item__descr {
+  font-size: 26px;
+}
+
+.who-we__list .list-item,
+.why-we__list .list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1 0 calc(25% - 30px);
+  padding: 11px;
+  border-left: 1px solid #0463f1;
+}
+
+.why-we {
+  padding: 100px 0;
+}
+
+.why-we__list .list-item {
+  border: none;
+}
+
+.why-we__list .list-item__num {
+  font-weight: 700;
+  font-size: 96px;
+  margin-bottom: 15px;
+  color: transparent;
+  -webkit-text-stroke: 2px #0463f1;
+}
+
+.why-we__list .list-item__title {
+  font-size: 24px;
+  color: #fff;
+}
+
+.why-we__list .list-item__descr {
+  font-size: 18px;
+  color: #6e6e73;
+}
+
 @media (max-width: 1440px) {
   .partners__wrapper {
     flex-direction: column;
@@ -2637,6 +2692,13 @@ button {
 @media (max-width: 1380px) {
   .works-list .works-list__item.large {
     padding: calc(1vw + 1vh);
+  }
+}
+
+@media (max-width: 1320px) {
+  .who-we__list .list-item,
+  .why-we__list .list-item {
+    flex: 1 0 calc(50% - 30px);
   }
 }
 
@@ -2830,6 +2892,11 @@ button {
   .marquee-section {
     padding: 75px 0;
   }
+
+  .who-we__list .list-item,
+  .why-we__list .list-item {
+    flex: 1 0 calc(100% - 30px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -2901,7 +2968,9 @@ button {
   .we-do,
   .partners,
   .footer,
-  .marquee-section {
+  .marquee-section,
+  .who-we,
+  .why-we {
     padding: 40px 0;
   }
 
