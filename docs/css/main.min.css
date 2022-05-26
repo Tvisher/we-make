@@ -1126,6 +1126,11 @@ body.hidden {
   -ms-touch-action: none;
 }
 
+.background-wrapper,
+footer {
+  background-color: #202020;
+}
+
 *,
 *:before,
 *:after {
@@ -2523,7 +2528,7 @@ button {
 
 #bg-11,
 #bg-19 {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
