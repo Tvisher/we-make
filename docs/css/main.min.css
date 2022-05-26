@@ -1546,6 +1546,7 @@ button {
 .slider-section {
   padding-bottom: 130px;
   overflow: hidden;
+  position: relative;
 }
 
 .slider-section__slider {
