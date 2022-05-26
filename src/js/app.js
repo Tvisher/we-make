@@ -140,7 +140,7 @@ window.addEventListener('load', (e) => {
     setTimeout(() => {
         preloader.classList.add('hidden');
         mainSlider.init();
-    }, 4000);
+    }, 3200);
     $('.marquee').marquee({
         startVisible: true,
         duration: 20000,
