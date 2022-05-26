@@ -2633,6 +2633,24 @@ button {
   object-fit: cover;
   object-position: center;
   z-index: -2;
+  animation: toscale 12s ease infinite 0s;
+}
+
+@keyframes toscale {
+  0% {
+    filter: hue-rotate(0deg) saturate(100%);
+    transform: scale(1.1);
+  }
+
+  50% {
+    filter: hue-rotate(35deg) saturate(200%);
+    transform: scale(1);
+  }
+
+  100% {
+    filter: hue-rotate(0deg) saturate(100%);
+    transform: scale(1.1);
+  }
 }
 
 .who-we {
