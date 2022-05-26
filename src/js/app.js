@@ -131,9 +131,16 @@ const aboutSectionSlider = new Swiper('.about-section__slider', {
     },
 });
 
+
+const preloader = document.querySelector('#preloader');
+const preloaderSvg = preloader.querySelector('svg');
+document.body.style.opacity = 1;
+preloaderSvg.classList.add('active');
 window.addEventListener('load', (e) => {
-    mainSlider.init();
-    document.body.style.opacity = 1;
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+        mainSlider.init();
+    }, 4000);
     $('.marquee').marquee({
         startVisible: true,
         duration: 20000,
@@ -141,7 +148,6 @@ window.addEventListener('load', (e) => {
         delayBeforeStart: 0,
         direction: 'left',
         duplicated: true,
-        // pauseOnHover: true,
     });
 });
 // Инит и опции библиотеки анимаций
