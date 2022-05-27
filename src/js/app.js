@@ -179,6 +179,12 @@ document.body.addEventListener('click', (e) => {
         document.querySelector('[data-header-menu]').classList.toggle('active');
         document.body.classList.toggle('hidden');
     }
+
+    if (target.closest('[data-menu-link]')) {
+        document.body.classList.remove('hidden');
+        document.querySelector('[data-burger-menu]').classList.remove('active');
+        document.querySelector('[data-header-menu]').classList.toggle('active');
+    }
 });
 // Маска на номера телефона
 document.querySelectorAll('input[type="tel"]').forEach(input => {
