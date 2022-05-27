@@ -16,7 +16,8 @@ import IMask from 'imask';
 import ModalVideo from 'modal-video';
 new ModalVideo('.js-modal-btn', {
     theme: 'dark',
-    autoplay: 1,
+    playsinline: 1,
+    autoplay: false
 });
 
 // Проверка поддержки webP
@@ -32,7 +33,7 @@ const mainSlider = new Swiper('.main-slider', {
         Autoplay,
         Keyboard
     ],
-    speed: 1200,
+    speed: 600,
     slidesPerView: 1,
     effect: 'fade',
     fadeEffect: {
@@ -139,6 +140,7 @@ const preloader = document.querySelector('#preloader');
 const preloaderSvg = preloader.querySelector('svg');
 document.body.style.opacity = 1;
 preloaderSvg.classList.add('active');
+
 window.addEventListener('load', (e) => {
     setTimeout(() => {
         preloader.classList.add('hidden');

@@ -11,7 +11,6 @@
   line-height: 140%;
   cursor: pointer;
   border-radius: 20px;
-  border: 2px solid transparent;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease,
     border-color 0.3s ease;
   position: relative;
@@ -22,10 +21,12 @@
   @media (max-width: 440px) {
     padding: 20px;
   }
+  z-index: 1;
 }
 
 .fillBtn {
-  border-color: $brand-primary;
+  box-shadow: inset 0px 0px 0px 2px $brand-primary;
+  border: none;
   color: $brand-white;
   background-color: transparent;
   &:before {
@@ -38,8 +39,8 @@
     width: 150%;
     z-index: -1;
     content: "";
-    transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 2px solid $brand-primary;
+    transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+      transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   &:hover {
     &:before {
@@ -49,9 +50,9 @@
 }
 
 .ghostBtn {
+  box-shadow: inset 0px 0px 0px 2px $brand-primary;
   background-color: transparent;
   color: $brand-white;
-  border-color: $brand-primary;
 
   &:before {
     background-color: $brand-primary;
@@ -62,7 +63,8 @@
     width: 100%;
     z-index: -1;
     content: "";
-    transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+      transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   &:hover {
     &:before {
