@@ -2306,6 +2306,7 @@ button {
 .about-section__slider .review {
   max-width: 400px;
   padding: 30px;
+  height: auto;
   background: linear-gradient(146.39deg, #292a2f 0%, #4b4c50 100%);
 }
 
@@ -2664,7 +2665,17 @@ button {
   left: 24px;
   top: 20px;
   color: #6e6e73;
+  font-weight: 500;
   transition: top 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.sucsesful-submit__ico {
+  margin-bottom: 30px;
+}
+
+.sucsesful-submit__title {
+  font-size: 36px;
+  margin-bottom: 12px;
 }
 
 [data-styles-field]:not(:placeholder-shown) ~ .styles-text,
@@ -2681,6 +2692,7 @@ button {
 }
 
 .form__agreement::before {
+  flex: 0 0 auto;
   margin-right: 8px;
   width: 32px;
   height: 32px;
@@ -2812,6 +2824,121 @@ button {
 
 .why-we__list .list-item__descr {
   font-size: 18px;
+  color: #6e6e73;
+}
+
+.modal-wrapper {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.666);
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.modal-wrapper.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper .modal-body {
+  max-width: 554px;
+  width: 100%;
+}
+
+.modal-wrapper .styles-text-input {
+  max-width: initial;
+}
+
+.modal-wrapper .form__agreement {
+  margin-bottom: 30px;
+}
+
+.modal-wrapper .modal-form {
+  padding: 50px;
+  border-radius: 16px;
+  background-color: #0463f1;
+}
+
+.modal-wrapper .modal-form .submit-btn {
+  width: 100%;
+}
+
+.modal-wrapper .modal-form__title {
+  line-height: 100%;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.modal-wrapper .styles-label.area {
+  padding: 10px;
+}
+
+.modal-wrapper .styles-label.area .styles-text-input {
+  padding: 10px;
+  min-height: 120px;
+}
+
+.modal-wrapper .modal-form__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.modal-wrapper .close-btn {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.1211 12.0005L23.5608 2.56186C24.1467 1.9759 24.1467 1.02587 23.5608 0.439959C22.9748 -0.146002 22.0248 -0.146002 21.4389 0.439959L12.0002 9.87954L2.56161 0.439959C1.97565 -0.146002 1.02563 -0.146002 0.439714 0.439959C-0.146199 1.02592 -0.146246 1.97594 0.439714 2.56186L9.8793 12.0005L0.439714 21.4391C-0.146246 22.0251 -0.146246 22.9751 0.439714 23.561C1.02567 24.1469 1.9757 24.147 2.56161 23.561L12.0002 14.1214L21.4388 23.561C22.0248 24.147 22.9748 24.147 23.5607 23.561C24.1467 22.975 24.1467 22.025 23.5607 21.4391L14.1211 12.0005Z' fill='white'/%3e%3c/svg%3e ");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-wrapper .close-btn:hover {
+  transform: scale(1.12);
+}
+
+.modal-wrapper .upload-field {
+  margin-bottom: 30px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal-wrapper .upload-field__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal-wrapper .upload-field__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-wrapper .upload-field__text span {
+  margin-top: 10px;
   color: #6e6e73;
 }
 
@@ -3113,6 +3240,10 @@ button {
 
   .styles-text-input {
     padding: 20px 24px;
+  }
+
+  .modal-wrapper .modal-form {
+    padding: 30px;
   }
 }
 
