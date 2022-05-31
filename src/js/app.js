@@ -255,6 +255,7 @@ siteForms.forEach(form => {
                 form.reset();
                 //вывести модалку об успешной отправке
                 form.classList.remove('_sending');
+                form.classList.add('sent');
             } else {
                 form.classList.remove('_sending');
                 console.log('Ошибка');

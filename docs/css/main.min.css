@@ -2557,12 +2557,13 @@ button {
 }
 
 .partners__wrapper .partners__icons .partners__icon:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
   opacity: 1;
 }
 
 .partners__wrapper .partners__icons .partners__icon img {
   opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -3058,6 +3059,68 @@ button {
 
 .contact-section__block.second .social-link:hover svg {
   transform: scale(1.1);
+}
+
+#section-form {
+  position: relative;
+  transition: opacity 0.2s ease;
+}
+
+#section-form .sucsesful-submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#section-form._sending {
+  opacity: 0.4;
+}
+
+#section-form.sent .section-form__body {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#section-form.sent .sucsesful-submit {
+  opacity: 1;
+}
+
+.modal-form {
+  position: relative;
+}
+
+.modal-form._sending {
+  opacity: 0.4;
+}
+
+.modal-form.sent .modal-form__body {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.modal-form.sent .sucsesful-submit {
+  opacity: 1;
+}
+
+.modal-form.sent .modal-form__title {
+  opacity: 0;
+}
+
+.modal-form .sucsesful-submit {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 1440px) {
