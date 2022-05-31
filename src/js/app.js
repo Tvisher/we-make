@@ -180,7 +180,7 @@ document.body.addEventListener('click', (e) => {
     if (target.closest('[data-menu-link]')) {
         document.body.classList.remove('hidden');
         document.querySelector('[data-burger-menu]').classList.remove('active');
-        document.querySelector('[data-header-menu]').classList.toggle('active');
+        document.querySelector('[data-header-menu]').classList.remove('active');
     }
 });
 // Маска на номера телефона
@@ -193,5 +193,77 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
 
 
 
+
+
+const siteForms = document.querySelectorAll('form');
+
+const formAddError = (input) => {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error')
+}
+const formRemoveError = (input) => {
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error')
+}
+// Функция проверки email
+const emailTest = (input) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return !re.test(input.value);
+}
+
+const formValidate = (form) => {
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+    for (let index = 0; index < formReq.length; index++) {
+        const input = formReq[index];
+        formRemoveError(input);
+        if (input.classList.contains('_email')) {
+            if (emailTest(input) || (input.value === '')) {
+                formAddError(input);
+                error++;
+            }
+        } else if (input.getAttribute('type') === 'checkbox' && input.checked === false) {
+            formAddError(input);
+            error++;
+        }
+        else {
+            if (input.value === '') {
+                formAddError(input);
+                error++;
+            }
+        }
+    }
+    return error;
+}
+
+siteForms.forEach(form => {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        let error = formValidate(form);
+
+        let formData = new FormData(form);
+        console.log(formData);
+        if (error === 0) {
+            form.classList.add('_sending')
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                let result = await response.json();
+                console.log(result.message);
+                form.reset();
+                //вывести модалку об успешной отправке
+                form.classList.remove('_sending');
+            } else {
+                form.classList.remove('_sending');
+                console.log('Ошибка');
+            }
+        } else {
+            const errorMessage = "Заполнены не все обязательные поля";
+            console.log(errorMessage);
+        }
+    });
+})
 
 
