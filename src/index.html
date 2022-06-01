@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We-Make</title>
-    <!-- Preload fonts -->
-    <link rel="preload" href="./fonts/Gilroy-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/Gilroy-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
-    <!-- transition bagfix zeroscript -->
-    <script> </script>
-</head>
+@@include('./html/head.html')
 
 <body>
     <div id="preloader">
@@ -46,7 +25,7 @@
                 <li><a data-menu-link href="#projects-section">Портфолио</a></li>
                 <li><a data-menu-link href="#we-do">Услуги</a></li>
                 <li><a data-menu-link href="#about-section">О компании</a></li>
-                <li><a data-menu-link href="#form-section">Контакты</a></li>
+                <li><a data-menu-link href="#contact-section">Контакты</a></li>
             </ul>
             <div class="mobile-menu__phones">
                 <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
@@ -67,7 +46,7 @@
                         <li><a href="#projects-section">Портфолио</a></li>
                         <li><a href="#we-do">Услуги</a></li>
                         <li><a href="#about-section">О компании</a></li>
-                        <li><a href="#form-section">Контакты</a></li>
+                        <li><a href="#contact-section">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__right">
@@ -274,7 +253,7 @@
                     </div>
                     <div class="slider__footer">
                         <div class="slider__footer-links">
-                            <a href="#">Instagram</a>
+                            <a href="https://www.instagram.com/wemake_kz/">Instagram</a>
                             <a href="#">Презентация <span class="nameplate">(3mb)</span></a>
                         </div>
                         <div class="main-slider__navigation">
@@ -339,13 +318,13 @@
                 </h2>
                 <p class="section-descr">Разработка сайтов — основная специализация нашей компании. Мы делаем свою работу так, чтобы её не стыдно было показать в портфолио</p>
                 <div class="works-list">
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/kaz-cink.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-01.jpg" alt="">
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/lin-od.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-02.jpg" alt="">
                             <div class="image-container__shape"></div>
@@ -357,13 +336,13 @@
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/qazaq-str.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-04.jpg" alt="">
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/cf-moto.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
 
                         <div class="image-container">
                             <img src="@img/work-05.jpg" alt="">
@@ -376,25 +355,25 @@
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/elitnyi-stroitel.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-07.jpg" alt="">
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/benton.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-08.jpg" alt="">
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/ukkz.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-09.jpg" alt="">
                             <div class="image-container__shape"></div>
                         </div>
                     </a>
-                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
+                    <a href="./files/kemont.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640">
                         <div class="image-container">
                             <img src="@img/work-10.jpg" alt="">
                             <div class="image-container__shape"></div>
@@ -488,7 +467,7 @@
                     </a>
                 </div>
                 <div class="all-project">
-                    <a href="#" class="btn fillBtn" style="margin:auto;">Больше проектов в Instagram</a>
+                    <a href="https://www.instagram.com/wemake_kz/" class="btn fillBtn" style="margin:auto;">Больше проектов в Instagram</a>
                 </div>
                 <div class="bg-wrap">
                     <div class="blue-bg"></div>
@@ -819,10 +798,12 @@
                                     <span class="styles-text">Имя</span>
                                 </div>
                                 <div class="styles-label">
-                                    <input class="styles-text-input" type="tel" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
+                                    <input class="styles-text-input" type="tel" value="+7 (" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
                                     <span class="styles-text">Телефон</span>
                                 </div>
-                                <div class="form__agreement">Согласен на обработку персональных данных</div>
+                                <div class="form__agreement">
+                                    <p>Согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></p>
+                                </div>
                                 <button class="btn submit-btn">Отправить</button>
                             </div>
                             <div class="sucsesful-submit">
@@ -835,8 +816,6 @@
                                 <div class="sucsesful-submit__descr">Наши менеджеры обязательно свяжуться с Вами в ближайшее время.</div>
                             </div>
                         </form>
-                        <style>
-                        </style>
                     </div>
                 </div>
             </div>
@@ -899,200 +878,4 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <a href="#" class="footer__logo">
-                    <img src="@img/footer-logo.svg" alt="">
-                </a>
-                <div class="footer__text">© Digital agency «Voxel» 2012 - 2022</div>
-            </div>
-        </div>
-    </footer>
-</body>
-
-<div class="modal-wrapper" data-modal-form="1">
-    <div class="modal-body">
-        <form action="#" class="modal-form" id="start-project">
-            <div class="modal-form__head">
-                <h4 class="modal-form__title">Начать проект</h4>
-                <div class="close-btn" data-close-modal>
-                </div>
-            </div>
-            <div class="modal-form__body">
-                <div class="styles-label">
-                    <input class="styles-text-input" type="text" autocomplete="off" name="user-name" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Имя</span>
-                </div>
-                <div class="styles-label">
-                    <input class="styles-text-input" type="tel" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Телефон</span>
-                </div>
-                <div class="form__agreement">Согласен на обработку персональных данных</div>
-                <button class="btn submit-btn">Отправить</button>
-            </div>
-            <div class="sucsesful-submit">
-                <div class="sucsesful-submit__ico">
-                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.9852 0.0698236C49.9317 0.999324 43.1634 2.87857 35.7352 6.52532C29.2082 9.72957 24.5507 13.0191 19.2707 18.1538C13.8022 23.4716 9.82894 28.9458 6.46694 35.7936C3.29894 42.2466 1.37644 48.5736 0.313688 56.0436C-0.104562 58.9838 -0.104562 68.8533 0.313688 71.7936C1.38269 79.3083 3.30519 85.6261 6.47619 92.0436C12.8367 104.917 22.8172 114.939 35.4852 121.173C40.4187 123.6 43.3962 124.71 48.2352 125.923C60.5642 129.016 72.9572 128.469 85.1102 124.296C88.6282 123.088 95.6239 119.605 98.8602 117.449C106.503 112.359 113.276 105.434 118.209 97.6686C118.864 96.6373 120.218 94.1503 121.217 92.1418C133.534 67.3751 128.389 37.5526 108.452 18.1576C103.2 13.0481 98.6207 9.81507 91.9852 6.53082C85.8054 3.47207 79.6084 1.53507 72.7652 0.523074C70.3314 0.163074 61.0502 -0.142176 58.9852 0.0698236ZM72.7352 8.65082C88.4292 11.2881 101.692 19.8623 110.519 33.0786C114.976 39.7516 117.918 47.3823 119.275 55.7936C119.894 59.6288 119.894 68.2083 119.275 72.0436C116.581 88.7361 107.444 102.597 93.2352 111.547C87.1507 115.379 79.8192 118.065 71.9852 119.333C68.1364 119.955 59.5667 119.953 55.7352 119.329C39.5429 116.693 26.1459 108.15 17.2014 94.7586C12.7442 88.0856 9.80269 80.4548 8.44519 72.0436C7.82544 68.2026 7.82619 59.6261 8.44669 55.7936C10.4567 43.3798 15.6742 33.0826 24.3492 24.4076C33.8364 14.9203 45.8764 9.30257 59.3602 8.07232C62.0647 7.82557 69.8197 8.16107 72.7352 8.65082ZM94.7034 39.9898C94.4109 40.1568 84.0852 48.8436 71.7577 59.2936C59.4299 69.7436 49.2069 78.3153 49.0394 78.3418C48.8722 78.3683 45.4164 74.5233 41.3602 69.7976C36.6149 64.2691 33.6424 61.0098 33.0237 60.6573C31.2154 59.6271 28.6609 60.3901 27.6882 62.2508C27.0807 63.4126 27.1739 65.2461 27.8939 66.2963C29.3582 68.4326 45.8099 87.1638 46.6442 87.6446C47.6529 88.2261 49.1162 88.3091 50.1667 87.8448C50.5414 87.6791 56.0539 83.1308 62.4167 77.7376C68.7794 72.3441 79.6629 63.1191 86.6024 57.2376C93.5419 51.3558 99.4764 46.1613 99.7899 45.6941C101.018 43.8641 100.329 41.1758 98.3642 40.1316C97.3754 39.6061 95.5027 39.5336 94.7034 39.9898Z" fill="white" />
-                    </svg>
-                </div>
-                <span class="sucsesful-submit__title">Спасибо за заявку!</span>
-                <div class="sucsesful-submit__descr">Наши менеджеры обязательно свяжуться с Вами в ближайшее время.</div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal-wrapper" data-modal-form="2">
-    <div class="modal-body">
-        <form action="#" class="modal-form" id="become-a-partner">
-            <div class="modal-form__head">
-                <h4 class="modal-form__title">Стать партнером</h4>
-                <div class="close-btn" data-close-modal>
-                </div>
-            </div>
-            <div class="modal-form__body">
-                <div class="styles-label">
-                    <input class="styles-text-input" type="text" autocomplete="off" name="user-name" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Имя</span>
-                </div>
-                <div class="styles-label">
-                    <input class="styles-text-input" type="tel" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Телефон</span>
-                </div>
-                <div class="styles-label">
-                    <input class="styles-text-input" type="text" autocomplete="off" name="user-site" data-styles-field placeholder=" ">
-                    <span class="styles-text">Сайт компании</span>
-                </div>
-                <div class="styles-label area">
-                    <textarea class="styles-text-input" name="user-message" data-styles-field placeholder=" "></textarea>
-                    <span class="styles-text">Опишите условия сотрудничества</span>
-                </div>
-                <div class="form__agreement">Согласен на обработку персональных данных</div>
-                <button class="btn submit-btn">Отправить</button>
-            </div>
-            <div class="sucsesful-submit">
-                <div class="sucsesful-submit__ico">
-                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.9852 0.0698236C49.9317 0.999324 43.1634 2.87857 35.7352 6.52532C29.2082 9.72957 24.5507 13.0191 19.2707 18.1538C13.8022 23.4716 9.82894 28.9458 6.46694 35.7936C3.29894 42.2466 1.37644 48.5736 0.313688 56.0436C-0.104562 58.9838 -0.104562 68.8533 0.313688 71.7936C1.38269 79.3083 3.30519 85.6261 6.47619 92.0436C12.8367 104.917 22.8172 114.939 35.4852 121.173C40.4187 123.6 43.3962 124.71 48.2352 125.923C60.5642 129.016 72.9572 128.469 85.1102 124.296C88.6282 123.088 95.6239 119.605 98.8602 117.449C106.503 112.359 113.276 105.434 118.209 97.6686C118.864 96.6373 120.218 94.1503 121.217 92.1418C133.534 67.3751 128.389 37.5526 108.452 18.1576C103.2 13.0481 98.6207 9.81507 91.9852 6.53082C85.8054 3.47207 79.6084 1.53507 72.7652 0.523074C70.3314 0.163074 61.0502 -0.142176 58.9852 0.0698236ZM72.7352 8.65082C88.4292 11.2881 101.692 19.8623 110.519 33.0786C114.976 39.7516 117.918 47.3823 119.275 55.7936C119.894 59.6288 119.894 68.2083 119.275 72.0436C116.581 88.7361 107.444 102.597 93.2352 111.547C87.1507 115.379 79.8192 118.065 71.9852 119.333C68.1364 119.955 59.5667 119.953 55.7352 119.329C39.5429 116.693 26.1459 108.15 17.2014 94.7586C12.7442 88.0856 9.80269 80.4548 8.44519 72.0436C7.82544 68.2026 7.82619 59.6261 8.44669 55.7936C10.4567 43.3798 15.6742 33.0826 24.3492 24.4076C33.8364 14.9203 45.8764 9.30257 59.3602 8.07232C62.0647 7.82557 69.8197 8.16107 72.7352 8.65082ZM94.7034 39.9898C94.4109 40.1568 84.0852 48.8436 71.7577 59.2936C59.4299 69.7436 49.2069 78.3153 49.0394 78.3418C48.8722 78.3683 45.4164 74.5233 41.3602 69.7976C36.6149 64.2691 33.6424 61.0098 33.0237 60.6573C31.2154 59.6271 28.6609 60.3901 27.6882 62.2508C27.0807 63.4126 27.1739 65.2461 27.8939 66.2963C29.3582 68.4326 45.8099 87.1638 46.6442 87.6446C47.6529 88.2261 49.1162 88.3091 50.1667 87.8448C50.5414 87.6791 56.0539 83.1308 62.4167 77.7376C68.7794 72.3441 79.6629 63.1191 86.6024 57.2376C93.5419 51.3558 99.4764 46.1613 99.7899 45.6941C101.018 43.8641 100.329 41.1758 98.3642 40.1316C97.3754 39.6061 95.5027 39.5336 94.7034 39.9898Z" fill="white" />
-                    </svg>
-                </div>
-                <span class="sucsesful-submit__title">Спасибо за заявку!</span>
-                <div class="sucsesful-submit__descr">Наши менеджеры обязательно свяжуться с Вами в ближайшее время.</div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal-wrapper" data-modal-form="3">
-    <div class="modal-body">
-        <form action="#" class="modal-form" id="leave-feedback">
-            <div class="modal-form__head">
-                <h4 class="modal-form__title">Оставить отзыв</h4>
-                <div class="close-btn" data-close-modal>
-                </div>
-            </div>
-            <div class="modal-form__body">
-                <div class="styles-label">
-                    <input class="styles-text-input" type="text" autocomplete="off" name="user-name" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Имя</span>
-                </div>
-                <div class="styles-label">
-                    <input class="styles-text-input" type="tel" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Телефон</span>
-                </div>
-                <div class="styles-label area">
-                    <textarea class="styles-text-input" name="user-message" data-styles-field placeholder=" " required></textarea>
-                    <span class="styles-text">Ваш отзыв</span>
-                </div>
-                <div class="upload-field">
-                    <input type="file" id="upload-file" class="upload-field__input" name="filename">
-                    <div class="upload-field__text">
-                        <svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5625 0.132074C6.21875 0.196699 5.47113 0.474449 4.90113 0.749199C3.023 1.65457 1.65625 3.34695 1.12462 5.42558C0.88 6.38233 0.875 6.82095 0.875 27.5492C0.875 48.2775 0.88 48.7161 1.12462 49.6728C1.74313 52.091 3.4065 53.8715 5.875 54.7576L6.6875 55.0492L15.875 55.0892L25.0625 55.1291L25.7173 56.1005C27.6031 58.8981 30.6953 61.3563 33.9749 62.6653C41.6184 65.716 50.4196 63.2356 55.3764 56.6341C60.2419 50.1538 60.3081 41.3787 55.5408 34.8432C53.0814 31.4717 49.1 28.7968 45.1563 27.8666L44.5 27.7118L44.4944 21.568C44.4903 17.0587 44.4486 15.3333 44.3381 15.0826C44.1295 14.6093 30.4239 0.249074 30.0425 0.104074C29.6334 -0.0514256 7.398 -0.0249257 6.5625 0.132074ZM28.2563 7.4867C28.3299 12.6438 28.3438 12.7613 29.0201 13.9538C29.7223 15.1916 30.8181 16.0802 32.3225 16.632C33.0173 16.8867 33.3319 16.9066 37.4688 16.957L41.875 17.0107V22.1748V27.3388L40.4405 27.3475C36.4634 27.3711 32.2516 28.8867 29.2366 31.3791L28.6606 31.8551L19.8825 31.8897L11.1044 31.9242L10.7398 32.3325C10.0213 33.1367 10.38 34.2461 11.4375 34.4902C11.7125 34.5538 15.1016 34.6071 18.9688 34.6087C22.836 34.6103 26 34.6378 26 34.6698C26 34.7018 25.6809 35.2222 25.2908 35.8261C24.9006 36.4301 24.3926 37.3321 24.1619 37.8305L23.7424 38.7367H17.4241H11.1058L10.7404 39.1021C10.2306 39.6118 10.2304 40.3208 10.7396 40.891L11.1044 41.2992L17.0024 41.3341L22.9003 41.3688L22.8335 41.6466C22.5493 42.8282 22.4531 43.8193 22.4551 45.5492C22.4579 48.0588 22.692 49.428 23.583 52.1456C23.652 52.3561 23.2444 52.3652 15.234 52.3331L6.8125 52.2992L6.12413 51.9611C4.76275 51.2925 3.87388 50.0732 3.62063 48.5268C3.46038 47.5486 3.46038 7.54983 3.62063 6.57158C3.948 4.57295 5.39063 3.06582 7.27825 2.75032C7.64088 2.6897 12.4938 2.64782 18.0625 2.6572L28.1875 2.6742L28.2563 7.4867ZM36.0085 10.0492L39.9208 14.1742L36.7073 14.2076C33.6649 14.2392 33.4608 14.2267 32.8748 13.9747C32.5343 13.8282 32.0333 13.467 31.7613 13.172C30.9545 12.2968 30.875 11.8322 30.875 7.9967V4.6772L31.4856 5.3007C31.8215 5.64358 33.8569 7.78045 36.0085 10.0492ZM10.7596 25.6213C10.0704 26.3106 10.3001 27.3993 11.2076 27.7443C11.3865 27.8123 14.4324 27.8617 18.4519 27.8617C26.0866 27.8617 25.916 27.8783 26.3215 27.0945C26.5966 26.5622 26.4654 25.96 25.9861 25.5567L25.6059 25.2367H18.375H11.1443L10.7596 25.6213ZM42.6364 30.1227C46.3128 30.5985 49.5163 32.2133 52.0659 34.8763C57.7796 40.8441 57.8248 50.2512 52.1689 56.3602C51.4694 57.1157 49.963 58.3477 48.9313 59.0081C45.1319 61.4401 39.7538 61.9726 35.3485 60.3531C30.6919 58.6411 27.0901 54.7651 25.705 49.9748C25.2201 48.2981 25.0838 47.0502 25.1614 45.0033C25.3119 41.0416 26.7095 37.728 29.4344 34.8731C32.8756 31.2676 37.7975 29.4966 42.6364 30.1227ZM40.1575 35.5783C39.799 35.7738 32.3136 43.6842 31.8195 44.3897C31.7125 44.5425 31.625 44.8842 31.625 45.1491C31.625 46.1172 32.6573 46.6797 33.5833 46.2162C33.7321 46.1417 35.0821 44.7621 36.5833 43.1505L39.3125 40.2201L39.375 47.6347C39.4425 55.6355 39.4243 55.4368 40.1225 55.798C40.584 56.0366 40.916 56.0366 41.3775 55.798C42.0758 55.4368 42.0575 55.636 42.125 47.6295L42.1875 40.2098L44.9375 43.1796C46.6176 44.994 47.8429 46.2145 48.0868 46.3167C49.154 46.7643 50.275 45.5317 49.7144 44.5272C49.5664 44.2622 42.375 36.5015 41.6679 35.8436C41.1836 35.3932 40.6641 35.302 40.1575 35.5783Z" fill="#6E6E73" />
-                        </svg>
-                        <span>Прикрепите файл</span>
-                    </div>
-                </div>
-                <div class="form__agreement">Согласен на обработку персональных данных</div>
-                <button class="btn submit-btn">Отправить</button>
-            </div>
-            <div class="sucsesful-submit">
-                <div class="sucsesful-submit__ico">
-                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.9852 0.0698236C49.9317 0.999324 43.1634 2.87857 35.7352 6.52532C29.2082 9.72957 24.5507 13.0191 19.2707 18.1538C13.8022 23.4716 9.82894 28.9458 6.46694 35.7936C3.29894 42.2466 1.37644 48.5736 0.313688 56.0436C-0.104562 58.9838 -0.104562 68.8533 0.313688 71.7936C1.38269 79.3083 3.30519 85.6261 6.47619 92.0436C12.8367 104.917 22.8172 114.939 35.4852 121.173C40.4187 123.6 43.3962 124.71 48.2352 125.923C60.5642 129.016 72.9572 128.469 85.1102 124.296C88.6282 123.088 95.6239 119.605 98.8602 117.449C106.503 112.359 113.276 105.434 118.209 97.6686C118.864 96.6373 120.218 94.1503 121.217 92.1418C133.534 67.3751 128.389 37.5526 108.452 18.1576C103.2 13.0481 98.6207 9.81507 91.9852 6.53082C85.8054 3.47207 79.6084 1.53507 72.7652 0.523074C70.3314 0.163074 61.0502 -0.142176 58.9852 0.0698236ZM72.7352 8.65082C88.4292 11.2881 101.692 19.8623 110.519 33.0786C114.976 39.7516 117.918 47.3823 119.275 55.7936C119.894 59.6288 119.894 68.2083 119.275 72.0436C116.581 88.7361 107.444 102.597 93.2352 111.547C87.1507 115.379 79.8192 118.065 71.9852 119.333C68.1364 119.955 59.5667 119.953 55.7352 119.329C39.5429 116.693 26.1459 108.15 17.2014 94.7586C12.7442 88.0856 9.80269 80.4548 8.44519 72.0436C7.82544 68.2026 7.82619 59.6261 8.44669 55.7936C10.4567 43.3798 15.6742 33.0826 24.3492 24.4076C33.8364 14.9203 45.8764 9.30257 59.3602 8.07232C62.0647 7.82557 69.8197 8.16107 72.7352 8.65082ZM94.7034 39.9898C94.4109 40.1568 84.0852 48.8436 71.7577 59.2936C59.4299 69.7436 49.2069 78.3153 49.0394 78.3418C48.8722 78.3683 45.4164 74.5233 41.3602 69.7976C36.6149 64.2691 33.6424 61.0098 33.0237 60.6573C31.2154 59.6271 28.6609 60.3901 27.6882 62.2508C27.0807 63.4126 27.1739 65.2461 27.8939 66.2963C29.3582 68.4326 45.8099 87.1638 46.6442 87.6446C47.6529 88.2261 49.1162 88.3091 50.1667 87.8448C50.5414 87.6791 56.0539 83.1308 62.4167 77.7376C68.7794 72.3441 79.6629 63.1191 86.6024 57.2376C93.5419 51.3558 99.4764 46.1613 99.7899 45.6941C101.018 43.8641 100.329 41.1758 98.3642 40.1316C97.3754 39.6061 95.5027 39.5336 94.7034 39.9898Z" fill="white" />
-                    </svg>
-                </div>
-                <span class="sucsesful-submit__title">Спасибо за отзыв!</span>
-                <div class="sucsesful-submit__descr">Он будет опубликован после проверки модератора</div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal-wrapper" data-modal-form="4">
-    <div class="modal-body">
-        <form action="#" class="modal-form" id="write-to-us">
-            <div class="modal-form__head">
-                <h4 class="modal-form__title">Написать нам</h4>
-                <div class="close-btn" data-close-modal>
-                </div>
-            </div>
-            <div class="modal-form__body">
-                <div class="styles-label">
-                    <input class="styles-text-input" type="text" autocomplete="off" name="user-name" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Имя</span>
-                </div>
-                <div class="styles-label">
-                    <input class="styles-text-input" type="tel" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
-                    <span class="styles-text">Телефон</span>
-                </div>
-                <div class="styles-label area">
-                    <textarea class="styles-text-input" name="user-message" data-styles-field placeholder=" "></textarea>
-                    <span class="styles-text">Ваше сообщение</span>
-                </div>
-                <div class="upload-field">
-                    <input type="file" id="upload-file" class="upload-field__input" name="filename">
-                    <div class="upload-field__text">
-                        <svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5625 0.132074C6.21875 0.196699 5.47113 0.474449 4.90113 0.749199C3.023 1.65457 1.65625 3.34695 1.12462 5.42558C0.88 6.38233 0.875 6.82095 0.875 27.5492C0.875 48.2775 0.88 48.7161 1.12462 49.6728C1.74313 52.091 3.4065 53.8715 5.875 54.7576L6.6875 55.0492L15.875 55.0892L25.0625 55.1291L25.7173 56.1005C27.6031 58.8981 30.6953 61.3563 33.9749 62.6653C41.6184 65.716 50.4196 63.2356 55.3764 56.6341C60.2419 50.1538 60.3081 41.3787 55.5408 34.8432C53.0814 31.4717 49.1 28.7968 45.1563 27.8666L44.5 27.7118L44.4944 21.568C44.4903 17.0587 44.4486 15.3333 44.3381 15.0826C44.1295 14.6093 30.4239 0.249074 30.0425 0.104074C29.6334 -0.0514256 7.398 -0.0249257 6.5625 0.132074ZM28.2563 7.4867C28.3299 12.6438 28.3438 12.7613 29.0201 13.9538C29.7223 15.1916 30.8181 16.0802 32.3225 16.632C33.0173 16.8867 33.3319 16.9066 37.4688 16.957L41.875 17.0107V22.1748V27.3388L40.4405 27.3475C36.4634 27.3711 32.2516 28.8867 29.2366 31.3791L28.6606 31.8551L19.8825 31.8897L11.1044 31.9242L10.7398 32.3325C10.0213 33.1367 10.38 34.2461 11.4375 34.4902C11.7125 34.5538 15.1016 34.6071 18.9688 34.6087C22.836 34.6103 26 34.6378 26 34.6698C26 34.7018 25.6809 35.2222 25.2908 35.8261C24.9006 36.4301 24.3926 37.3321 24.1619 37.8305L23.7424 38.7367H17.4241H11.1058L10.7404 39.1021C10.2306 39.6118 10.2304 40.3208 10.7396 40.891L11.1044 41.2992L17.0024 41.3341L22.9003 41.3688L22.8335 41.6466C22.5493 42.8282 22.4531 43.8193 22.4551 45.5492C22.4579 48.0588 22.692 49.428 23.583 52.1456C23.652 52.3561 23.2444 52.3652 15.234 52.3331L6.8125 52.2992L6.12413 51.9611C4.76275 51.2925 3.87388 50.0732 3.62063 48.5268C3.46038 47.5486 3.46038 7.54983 3.62063 6.57158C3.948 4.57295 5.39063 3.06582 7.27825 2.75032C7.64088 2.6897 12.4938 2.64782 18.0625 2.6572L28.1875 2.6742L28.2563 7.4867ZM36.0085 10.0492L39.9208 14.1742L36.7073 14.2076C33.6649 14.2392 33.4608 14.2267 32.8748 13.9747C32.5343 13.8282 32.0333 13.467 31.7613 13.172C30.9545 12.2968 30.875 11.8322 30.875 7.9967V4.6772L31.4856 5.3007C31.8215 5.64358 33.8569 7.78045 36.0085 10.0492ZM10.7596 25.6213C10.0704 26.3106 10.3001 27.3993 11.2076 27.7443C11.3865 27.8123 14.4324 27.8617 18.4519 27.8617C26.0866 27.8617 25.916 27.8783 26.3215 27.0945C26.5966 26.5622 26.4654 25.96 25.9861 25.5567L25.6059 25.2367H18.375H11.1443L10.7596 25.6213ZM42.6364 30.1227C46.3128 30.5985 49.5163 32.2133 52.0659 34.8763C57.7796 40.8441 57.8248 50.2512 52.1689 56.3602C51.4694 57.1157 49.963 58.3477 48.9313 59.0081C45.1319 61.4401 39.7538 61.9726 35.3485 60.3531C30.6919 58.6411 27.0901 54.7651 25.705 49.9748C25.2201 48.2981 25.0838 47.0502 25.1614 45.0033C25.3119 41.0416 26.7095 37.728 29.4344 34.8731C32.8756 31.2676 37.7975 29.4966 42.6364 30.1227ZM40.1575 35.5783C39.799 35.7738 32.3136 43.6842 31.8195 44.3897C31.7125 44.5425 31.625 44.8842 31.625 45.1491C31.625 46.1172 32.6573 46.6797 33.5833 46.2162C33.7321 46.1417 35.0821 44.7621 36.5833 43.1505L39.3125 40.2201L39.375 47.6347C39.4425 55.6355 39.4243 55.4368 40.1225 55.798C40.584 56.0366 40.916 56.0366 41.3775 55.798C42.0758 55.4368 42.0575 55.636 42.125 47.6295L42.1875 40.2098L44.9375 43.1796C46.6176 44.994 47.8429 46.2145 48.0868 46.3167C49.154 46.7643 50.275 45.5317 49.7144 44.5272C49.5664 44.2622 42.375 36.5015 41.6679 35.8436C41.1836 35.3932 40.6641 35.302 40.1575 35.5783Z" fill="#6E6E73" />
-                        </svg>
-                        <span>Прикрепите файл</span>
-                    </div>
-                </div>
-                <div class="form__agreement">Согласен на обработку персональных данных</div>
-                <button class="btn submit-btn">Отправить</button>
-            </div>
-            <div class="sucsesful-submit">
-                <div class="sucsesful-submit__ico">
-                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.9852 0.0698236C49.9317 0.999324 43.1634 2.87857 35.7352 6.52532C29.2082 9.72957 24.5507 13.0191 19.2707 18.1538C13.8022 23.4716 9.82894 28.9458 6.46694 35.7936C3.29894 42.2466 1.37644 48.5736 0.313688 56.0436C-0.104562 58.9838 -0.104562 68.8533 0.313688 71.7936C1.38269 79.3083 3.30519 85.6261 6.47619 92.0436C12.8367 104.917 22.8172 114.939 35.4852 121.173C40.4187 123.6 43.3962 124.71 48.2352 125.923C60.5642 129.016 72.9572 128.469 85.1102 124.296C88.6282 123.088 95.6239 119.605 98.8602 117.449C106.503 112.359 113.276 105.434 118.209 97.6686C118.864 96.6373 120.218 94.1503 121.217 92.1418C133.534 67.3751 128.389 37.5526 108.452 18.1576C103.2 13.0481 98.6207 9.81507 91.9852 6.53082C85.8054 3.47207 79.6084 1.53507 72.7652 0.523074C70.3314 0.163074 61.0502 -0.142176 58.9852 0.0698236ZM72.7352 8.65082C88.4292 11.2881 101.692 19.8623 110.519 33.0786C114.976 39.7516 117.918 47.3823 119.275 55.7936C119.894 59.6288 119.894 68.2083 119.275 72.0436C116.581 88.7361 107.444 102.597 93.2352 111.547C87.1507 115.379 79.8192 118.065 71.9852 119.333C68.1364 119.955 59.5667 119.953 55.7352 119.329C39.5429 116.693 26.1459 108.15 17.2014 94.7586C12.7442 88.0856 9.80269 80.4548 8.44519 72.0436C7.82544 68.2026 7.82619 59.6261 8.44669 55.7936C10.4567 43.3798 15.6742 33.0826 24.3492 24.4076C33.8364 14.9203 45.8764 9.30257 59.3602 8.07232C62.0647 7.82557 69.8197 8.16107 72.7352 8.65082ZM94.7034 39.9898C94.4109 40.1568 84.0852 48.8436 71.7577 59.2936C59.4299 69.7436 49.2069 78.3153 49.0394 78.3418C48.8722 78.3683 45.4164 74.5233 41.3602 69.7976C36.6149 64.2691 33.6424 61.0098 33.0237 60.6573C31.2154 59.6271 28.6609 60.3901 27.6882 62.2508C27.0807 63.4126 27.1739 65.2461 27.8939 66.2963C29.3582 68.4326 45.8099 87.1638 46.6442 87.6446C47.6529 88.2261 49.1162 88.3091 50.1667 87.8448C50.5414 87.6791 56.0539 83.1308 62.4167 77.7376C68.7794 72.3441 79.6629 63.1191 86.6024 57.2376C93.5419 51.3558 99.4764 46.1613 99.7899 45.6941C101.018 43.8641 100.329 41.1758 98.3642 40.1316C97.3754 39.6061 95.5027 39.5336 94.7034 39.9898Z" fill="white" />
-                    </svg>
-                </div>
-                <span class="sucsesful-submit__title">Спасибо за заявку!</span>
-                <div class="sucsesful-submit__descr">Наши менеджеры обязательно свяжуться с Вами в ближайшее время.</div>
-            </div>
-        </form>
-    </div>
-</div>
-<script>
-    // Открыть / закрыть модалку с формой 
-    document.body.addEventListener('click', (e) => {
-        const target = e.target;
-        //открытие модалки с формой
-        if (target.closest('[data-modal-btn]')) {
-            e.preventDefault();
-            let dataModalBtnId = target.closest('[data-modal-btn]').dataset.modalBtn;
-            document.querySelector(`[data-modal-form='${dataModalBtnId}']`).classList.add('show');
-        }
-        //закрытие модалки с формой
-        if (target.closest('[data-close-modal]')) {
-            document.querySelector('[data-modal-form].show').classList.remove('show');
-        }
-        if (target.closest('[data-modal-form].show') && !target.closest('.modal-form')) {
-            document.querySelector('[data-modal-form].show').classList.remove('show');
-        }
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="./js/app.min.js"></script>
-
-</html>
+    @@include('./html/footer.html')
