@@ -11,8 +11,6 @@ import Swiper, {
 
 import AOS from 'aos';
 import IMask from 'imask';
-
-
 // Проверка поддержки webP
 baseFunction.testWebP();
 
@@ -141,6 +139,7 @@ window.addEventListener('load', (e) => {
         preloader && preloader.classList.add('hidden');
         mainSlider.init();
     }, 3200);
+    //инициализация бегущей строки
     $('.marquee').marquee({
         startVisible: true,
         duration: 20000,
@@ -149,6 +148,16 @@ window.addEventListener('load', (e) => {
         direction: 'left',
         duplicated: true,
     });
+    //инициализация тултипа виджета
+    const widgetElem = document.querySelector('.widget-elem');
+    if (widgetElem) {
+        setTimeout(() => {
+            widgetElem.classList.add('show-tooltip');
+            widgetElem.onclick = (e) => {
+                widgetElem.classList.remove('show-tooltip');
+            }
+        }, 4000);
+    }
 });
 // Инит и опции библиотеки анимаций
 AOS.init({
@@ -202,45 +211,6 @@ document.querySelectorAll('input[type="tel"]').forEach(input => {
 
 const siteForms = document.querySelectorAll('form');
 
-// const formAddError = (input) => {
-//     input.parentElement.classList.add('_error');
-//     input.classList.add('_error')
-// }
-// const formRemoveError = (input) => {
-//     input.parentElement.classList.remove('_error');
-//     input.classList.remove('_error')
-// }
-// // Функция проверки email
-// const emailTest = (input) => {
-//     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return !re.test(input.value);
-// }
-
-// const formValidate = (form) => {
-//     let error = 0;
-//     let formReq = document.querySelectorAll('._req');
-//     for (let index = 0; index < formReq.length; index++) {
-//         const input = formReq[index];
-//         formRemoveError(input);
-//         if (input.classList.contains('_email')) {
-//             if (emailTest(input) || (input.value === '')) {
-//                 formAddError(input);
-//                 error++;
-//             }
-//         } else if (input.getAttribute('type') === 'checkbox' && input.checked === false) {
-//             formAddError(input);
-//             error++;
-//         }
-//         else {
-//             if (input.value === '') {
-//                 formAddError(input);
-//                 error++;
-//             }
-//         }
-//     }
-//     return error;
-// }
-
 siteForms.forEach(form => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -285,5 +255,10 @@ document.body.addEventListener('click', (e) => {
         document.querySelector('[data-modal-form].show').classList.remove('show');
     }
 });
+
+
+
+
+
 
 
