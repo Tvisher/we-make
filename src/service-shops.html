@@ -1,0 +1,1347 @@
+@@include('./html/head.html')
+
+<body>
+    <div id="preloader">
+        <svg width="200" height="64" viewBox="0 0 200 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40.4873 23.3116H33.1074L28.9305 43.9016H28.7767L23.8823 23.3116H16.7074L11.8387 43.9016H11.6849L7.5337 23.3116H0L7.30308 51.0759H15.1699L20.1155 31.4439H20.2693L25.2405 51.0759H33.2099L40.4873 23.3116ZM55.324 28.3101C58.6553 28.3101 60.9358 30.7447 61.0896 34.2929H49.4304C49.6865 30.8223 52.044 28.3101 55.324 28.3101ZM61.1921 42.5809C60.5003 44.7046 58.399 46.0772 55.6573 46.0772C51.8391 46.0772 49.3534 43.3578 49.3534 39.3951V38.929H68.2902V36.624C68.2902 28.1807 63.2421 22.7158 55.2472 22.7158C47.1242 22.7158 41.999 28.4655 41.999 37.3232C41.999 46.2068 47.0729 51.6715 55.5289 51.6715C62.3196 51.6715 67.2395 48.0197 68.0596 42.5809H61.1921Z" fill="white" class="svg-elem-1"></path>
+            <path d="M73.4452 51.2563H80.94V34.6046C80.94 31.5162 82.8649 29.3543 85.7139 29.3543C88.4861 29.3543 90.1544 31.1044 90.1544 34.0642V51.2563H97.3666V34.5017C97.3666 31.439 99.2405 29.3543 102.089 29.3543C104.99 29.3543 106.581 31.1044 106.581 34.2959V51.2563H114.076V32.417C114.076 26.8579 110.457 23.1518 105.067 23.1518C101.037 23.1518 97.7518 25.3394 96.5198 28.814H96.3656C95.4418 25.2108 92.6697 23.1518 88.6912 23.1518C84.9439 23.1518 81.9923 25.3394 80.8373 28.6595H80.6833V23.6665H73.4452V51.2563ZM129.45 46.2633C126.909 46.2633 125.215 44.9766 125.215 42.9177C125.215 40.9616 126.806 39.7005 129.604 39.4947L135.405 39.1344V41.1417C135.405 44.1272 132.71 46.2633 129.45 46.2633ZM126.986 51.6938C130.426 51.6938 133.839 49.9696 135.379 47.0356H135.533V51.2563H142.771V32.2884C142.771 26.7293 138.177 23.0746 131.119 23.0746C123.829 23.0746 119.286 26.7549 119.004 32.1082H125.857C126.216 30.075 127.987 28.6852 130.785 28.6852C133.608 28.6852 135.405 30.178 135.405 32.7516V34.5789L128.475 34.9906C121.622 35.4027 117.772 38.3107 117.772 43.3296C117.772 48.2967 121.75 51.6938 126.986 51.6938ZM155.4 34.7332H155.297V14.1182H147.802V51.2563H155.297V42.1456L157.248 40.0351L165.127 51.2563H173.751L162.74 35.5056L173.238 23.6665H164.742L155.4 34.7332ZM186.97 28.6337C190.306 28.6337 192.591 31.053 192.745 34.5789H181.066C181.323 31.1303 183.684 28.6337 186.97 28.6337ZM192.847 42.8148C192.154 44.925 190.05 46.2892 187.303 46.2892C183.479 46.2892 180.989 43.5867 180.989 39.649V39.1858H199.957V36.8952C199.957 28.5051 194.901 23.0746 186.893 23.0746C178.756 23.0746 173.623 28.7881 173.623 37.5901C173.623 46.4178 178.705 51.8483 187.175 51.8483C193.977 51.8483 198.904 48.2194 199.726 42.8148H192.847Z" fill="#0463F1" class="svg-elem-2"></path>
+            <path d="M149.911 61.9064C150.571 61.9064 151.095 61.5807 151.39 61.0523H151.403V61.8272H152.133V55.4746H151.368V57.9927H151.35C151.077 57.4908 150.549 57.1694 149.893 57.1694C148.741 57.1694 147.953 58.1028 147.953 59.538C147.953 60.9731 148.745 61.9064 149.911 61.9064ZM150.056 57.843C150.844 57.843 151.372 58.5166 151.372 59.538C151.372 60.5638 150.844 61.2328 150.056 61.2328C149.247 61.2328 148.736 60.5768 148.736 59.538C148.736 58.5034 149.247 57.843 150.056 57.843ZM153.207 61.8272H153.973V57.2486H153.207V61.8272ZM153.59 56.4783C153.854 56.4783 154.069 56.2626 154.069 56.0028C154.069 55.7387 153.854 55.5273 153.59 55.5273C153.33 55.5273 153.115 55.7387 153.115 56.0028C153.115 56.2626 153.33 56.4783 153.59 56.4783ZM156.868 61.1888C156.08 61.1888 155.565 60.546 155.565 59.5204C155.565 58.4947 156.08 57.843 156.868 57.843C157.664 57.843 158.197 58.5122 158.197 59.5204C158.197 60.5284 157.664 61.1888 156.868 61.1888ZM156.894 63.553C158.157 63.553 158.962 62.8265 158.962 61.7348V57.2486H158.232V58.0192H158.219C157.915 57.4865 157.378 57.1694 156.731 57.1694C155.548 57.1694 154.782 58.0852 154.782 59.5204C154.782 60.9423 155.548 61.8624 156.714 61.8624C157.356 61.8624 157.898 61.5366 158.179 61.0392H158.197V61.7612C158.197 62.4435 157.717 62.9014 156.925 62.9014C156.353 62.9014 155.9 62.624 155.75 62.2059H154.962C155.09 62.9851 155.886 63.553 156.894 63.553ZM160.001 61.8272H160.766V57.2486H160.001V61.8272ZM160.384 56.4783C160.648 56.4783 160.863 56.2626 160.863 56.0028C160.863 55.7387 160.648 55.5273 160.384 55.5273C160.124 55.5273 159.908 55.7387 159.908 56.0028C159.908 56.2626 160.124 56.4783 160.384 56.4783ZM162.047 56.1436V57.2486H161.365V57.8782H162.047V60.6385C162.047 61.5191 162.373 61.8624 163.213 61.8624C163.393 61.8624 163.605 61.8491 163.697 61.8272V61.1844C163.644 61.1933 163.468 61.2066 163.38 61.2066C162.989 61.2066 162.812 61.0171 162.812 60.599V57.8782H163.701V57.2486H162.812V56.1436H162.047ZM165.941 61.255C165.391 61.255 165.026 60.9687 165.026 60.533C165.026 60.1014 165.378 59.8286 165.994 59.7889L167.217 59.714V60.0883C167.217 60.7487 166.663 61.255 165.941 61.255ZM165.769 61.9064C166.385 61.9064 166.966 61.5631 167.239 61.0392H167.257V61.8272H167.983V58.662C167.983 57.7506 167.305 57.1694 166.231 57.1694C165.149 57.1694 164.471 57.777 164.419 58.5695H165.158C165.255 58.1203 165.624 57.843 166.214 57.843C166.848 57.843 167.217 58.1776 167.217 58.7366V59.1196L165.906 59.1945C164.85 59.2561 164.247 59.7492 164.247 60.533C164.247 61.3561 164.859 61.9064 165.769 61.9064ZM168.995 61.8272H169.76V55.4746H168.995V61.8272ZM174.152 61.255C173.602 61.255 173.237 60.9687 173.237 60.533C173.237 60.1014 173.589 59.8286 174.205 59.7889L175.428 59.714V60.0883C175.428 60.7487 174.873 61.255 174.152 61.255ZM173.98 61.9064C174.596 61.9064 175.177 61.5631 175.45 61.0392H175.468V61.8272H176.193V58.662C176.193 57.7506 175.516 57.1694 174.442 57.1694C173.36 57.1694 172.682 57.777 172.629 58.5695H173.369C173.465 58.1203 173.835 57.843 174.425 57.843C175.058 57.843 175.428 58.1776 175.428 58.7366V59.1196L174.117 59.1945C173.061 59.2561 172.458 59.7492 172.458 60.533C172.458 61.3561 173.069 61.9064 173.98 61.9064ZM179.027 61.1888C178.24 61.1888 177.725 60.546 177.725 59.5204C177.725 58.4947 178.24 57.843 179.027 57.843C179.824 57.843 180.356 58.5122 180.356 59.5204C180.356 60.5284 179.824 61.1888 179.027 61.1888ZM179.054 63.553C180.316 63.553 181.122 62.8265 181.122 61.7348V57.2486H180.391V58.0192H180.378C180.075 57.4865 179.538 57.1694 178.891 57.1694C177.707 57.1694 176.942 58.0852 176.942 59.5204C176.942 60.9423 177.707 61.8624 178.873 61.8624C179.516 61.8624 180.057 61.5366 180.339 61.0392H180.356V61.7612C180.356 62.4435 179.877 62.9014 179.084 62.9014C178.513 62.9014 178.059 62.624 177.91 62.2059H177.122C177.25 62.9851 178.046 63.553 179.054 63.553ZM183.956 57.8343C184.677 57.8343 185.157 58.3801 185.174 59.1461H182.688C182.737 58.3844 183.238 57.8343 183.956 57.8343ZM185.157 60.5152C185.029 60.9468 184.602 61.2417 184.022 61.2417C183.199 61.2417 182.684 60.6649 182.684 59.7889V59.7448H185.966V59.4543C185.966 58.0676 185.205 57.1694 183.969 57.1694C182.706 57.1694 181.896 58.1336 181.896 59.5556C181.896 60.9952 182.693 61.9064 184.004 61.9064C185.003 61.9064 185.777 61.3166 185.909 60.5152H185.157ZM186.741 61.8272H187.506V59.1329C187.506 58.3582 187.977 57.8473 188.699 57.8473C189.403 57.8473 189.751 58.2525 189.751 58.992V61.8272H190.516V58.8555C190.516 57.8165 189.935 57.1694 188.932 57.1694C188.224 57.1694 187.735 57.4865 187.48 57.9795H187.463V57.2486H186.741V61.8272ZM195.295 58.7499C195.198 57.9268 194.516 57.1694 193.372 57.1694C192.109 57.1694 191.269 58.0941 191.269 59.538C191.269 61.0128 192.114 61.9064 193.381 61.9064C194.419 61.9064 195.185 61.2636 195.304 60.3524H194.551C194.419 60.9028 194.01 61.2328 193.385 61.2328C192.593 61.2328 192.048 60.6033 192.048 59.538C192.048 58.499 192.584 57.843 193.376 57.843C194.05 57.843 194.437 58.2525 194.547 58.7499H195.295ZM196.386 63.5398C197.213 63.5398 197.591 63.2184 197.984 62.1486L199.783 57.2486H198.977L197.71 61.0612H197.698L196.43 57.2486H195.612L197.301 61.8315L197.196 62.1529C197.02 62.6857 196.782 62.8925 196.355 62.8925C196.259 62.8925 196.14 62.8881 196.056 62.8706V63.5133C196.14 63.5309 196.294 63.5398 196.386 63.5398Z" fill="white" class="svg-elem-3"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M180.652 0H195.064C196.809 0 198.223 1.415 198.223 3.16049V14.2222C198.223 15.9677 196.809 17.3827 195.064 17.3827H180.652C178.907 17.3827 177.493 15.9677 177.493 14.2222V3.16049C177.493 1.415 178.907 0 180.652 0ZM183.926 11.1959C183.926 11.5877 183.609 11.9047 183.218 11.9047C182.822 11.9047 182.509 11.5877 182.509 11.1959C182.509 10.7997 182.822 10.4871 183.218 10.4871C183.609 10.4871 183.926 10.7997 183.926 11.1959ZM186.205 9.02552H186.223L187.825 7.13248H189.281L187.482 9.15759L189.369 11.8519H187.891L186.54 9.9324L186.205 10.2934V11.8519H184.921V5.4992H186.205V9.02552ZM193.545 11.8519H189.651V11.121L192 8.14064V8.11423H189.686V7.13248H193.492V7.94692L191.283 10.8437V10.8657H193.545V11.8519Z" fill="white" class="svg-elem-4"></path>
+        </svg>
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="mobile-menu" data-header-menu>
+        <div class="mobile-menu__wrapper">
+            <ul>
+                <li><a data-menu-link href="#projects-section">Портфолио</a></li>
+                <li><a data-menu-link href="#we-do">Услуги</a></li>
+                <li><a data-menu-link href="#about-section">О компании</a></li>
+                <li><a data-menu-link href="#contact-section">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu__phones">
+                <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                <span class="phone_nameplate">Отдел продаж</span>
+                <a href="tel:+77083858718" class="phone-link">+7 (708) 385 87 18</a>
+                <span class="phone_nameplate">Бухгалтерия</span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html" class="header__logo" data-aos="fade-down" data-aos-duration="800">
+                    <img src="@img/logo.svg" alt="">
+                </a>
+                <nav class="header__nav">
+                    <ul>
+                        <li data-aos="fade-down" data-aos-duration="800"><a href="#projects-section">Портфолио</a></li>
+                        <li data-aos="fade-down" data-aos-duration="1000"><a href="#we-do">Услуги</a></li>
+                        <li data-aos="fade-down" data-aos-duration="1200"><a href="#about-section">О компании</a></li>
+                        <li data-aos="fade-down" data-aos-duration="1400"><a href="#contact-section">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__right" data-aos="fade-down" data-aos-duration="1400">
+                    <select name="lang" class="header__lang">
+                        <option value="eng">eng</option>
+                        <option value="kaz">kaz</option>
+                        <option value="rus">rus</option>
+                    </select>
+                    <div class="phone-block">
+                        <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                        <div class="phone-block__dropdown">
+                            <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                            <span class="phone_nameplate">Отдел продаж</span>
+                            <a href="tel:+77083858718" class="phone-link">+7 (708) 385 87 18</a>
+                            <span class="phone_nameplate">Бухгалтерия</span>
+                        </div>
+                    </div>
+                    <div class="burger-menu" data-burger-menu>
+                        <div class="burger-menu__ico">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>меню</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider-section">
+            <img src="@img/asd.gif" alt="" class="gif-bg">
+            <div class="container">
+                <div class="slider-section__slider swiper main-slider" data-aos="fade-in" data-aos-delay="400" data-aos-duration="1400">
+                    <div class="slider-action">
+                        <div class="box-shadow"></div>
+                        <div class="slider-action__mouse">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 9V23C24 27.4183 20.4183 31 16 31C11.5817 31 8 27.4183 8 23V9C8 4.58172 11.5817 1 16 1C20.4183 1 24 4.58172 24 9ZM7 9C7 4.02944 11.0294 0 16 0C20.9706 0 25 4.02944 25 9V23C25 27.9706 20.9706 32 16 32C11.0294 32 7 27.9706 7 23V9Z" fill="#0463F1" />
+                                <path d="M15.5 5.5C15.5 5.22386 15.7239 5 16 5C16.2761 5 16.5 5.22386 16.5 5.5V9.5C16.5 9.77614 16.2761 10 16 10C15.7239 10 15.5 9.77614 15.5 9.5V5.5Z" fill="white" />
+                            </svg>
+                            <svg class="top-to-down" width="8" height="65" viewBox="0 0 8 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.64645 64.3536C3.84171 64.5488 4.15829 64.5488 4.35355 64.3536L7.53553 61.1716C7.7308 60.9763 7.7308 60.6597 7.53553 60.4645C7.34027 60.2692 7.02369 60.2692 6.82843 60.4645L4 63.2929L1.17157 60.4645C0.976311 60.2692 0.659728 60.2692 0.464466 60.4645C0.269204 60.6597 0.269204 60.9763 0.464466 61.1716L3.64645 64.3536ZM3.5 0V64H4.5V0H3.5Z" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h1 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">круто</span></h1>
+                                    <div class="main-slider__descr">Веб-сайты любой сложности</div>
+                                    <div class="main-slider__nameplate">Нужен сайт? Или у Вас есть сайт, но он Вам не нравится? Или нравится, но с него нет продаж? Обращайтесь к нам - сделаем Вам сайт в лучшем виде: уникальный, с админ-панелью, адаптивный под все устройства, и самое главное: <span class="filled-white">ПРОДАЮЩИЙ!!!</span></div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">быстро</span></h2>
+                                    <div class="main-slider__descr">Продвижение сайта в ТОП</div>
+                                    <div class="main-slider__nameplate">Мы знаем все фишки поисковых систем, которые влияют на продвижение сайта в ТОП Google и Яндекс. Оптимизируем сайт, напишем текста, купим правильные ссылки, предоставим полный и понятный отчет - Ваш сайт <span class="filled-white">будет выше</span> Ваших конкурентов!!!.</div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">стильно</span></h2>
+                                    <div class="main-slider__descr">Дизайн каталогов и презентаций</div>
+                                    <div class="main-slider__nameplate">Если Вам нужен дизайн презентации или каталога, Вы попали по адресу. Нарисуем дизайн по последним трендам Web-индустрии, который понравится Вам и Вашим клиентам. Итог стильного дизайна - уровень Вашей компании станет<span class="filled-white"> ещё выше!!!</span></div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">эффективно</span></h2>
+                                    <div class="main-slider__descr">Платную рекламу в Google и Яндекс</div>
+                                    <div class="main-slider__nameplate">Если срочно нужны клиенты - быстро, недорого, и те, которые хотят купить прям сейчас - контекстная реклама в Google и Яндекс это лучшее решение. Запустим эффективный рекламу в кротчайшие сроки - уже через 3 дня <span class="filled-white">начнете получать заявки!!!</span></div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">умело</span></h2>
+                                    <div class="main-slider__descr">Внедряем AmoCRM в отдел продаж</div>
+                                    <div class="main-slider__nameplate">Теряете заявки? Не знаете как контролировать менеджеров? AmoCRM - лучшая система для отдела продаж. Объедините все каналы поступления обращений в одно окно, автоматизируйте ответы клиентам - ни одна заявка<span class="filled-white"> не будет потеряна.</span></div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="main-slider__title"><span class=" litle-margin">Мы делаем</span><span class="filled">шикарно</span></h2>
+                                    <div class="main-slider__descr">Техническую поддержку сайтов</div>
+                                    <div class="main-slider__nameplate">Сайт - это как Ваш офис, только виртуальный. Он всегда должен быть доступен для Ваших клиентов. Работая с нами <span class="filled-white">Вы получите 100% гарантию</span> работоспособности сайта 24/7 и быстрой отклик на поступающие обращения на доработки.</div>
+                                    <div class="slide__btns">
+                                        <a href="#" data-modal-btn='1' class="btn fillBtn">
+                                            <span class="is-desctop">Начать проект</span>
+                                            <span class="is-mobile">Заказать</span>
+                                        </a>
+                                        <a href="#projects-section" class="btn ghostBtn">
+                                            <span class="is-desctop">Наши проекты</span>
+                                            <span class="is-mobile">Проекты</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide__image">
+                                    <div class="swiper-slide__image-container">
+                                        <div class="swiper-slide__image-wrapper">
+                                            <img src="@img/slider-img6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__footer">
+                        <!-- <div class="slider__footer-links">
+                            <a href="https://www.instagram.com/wemake_kz/">Instagram</a>
+                            <a href="#">Презентация <span class="nameplate">(3mb)</span></a>
+                        </div> -->
+                        <div class="main-slider__navigation">
+                            <div class="slider-counter">
+                                <span class="current-counter">01</span>/<span class="general-counter">06</span>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="navigation__btn">
+                                <div class="swiper-button-prev"><svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9209 1.50495C11.9206 1.90264 11.7623 2.28392 11.4809 2.56495L3.80895 10.237C3.57673 10.4691 3.39252 10.7447 3.26684 11.0481C3.14117 11.3515 3.07648 11.6766 3.07648 12.005C3.07648 12.3333 3.14117 12.6585 3.26684 12.9618C3.39252 13.2652 3.57673 13.5408 3.80895 13.773L11.4709 21.435C11.7442 21.7179 11.8954 22.0968 11.892 22.4901C11.8885 22.8834 11.7308 23.2596 11.4527 23.5377C11.1746 23.8158 10.7983 23.9735 10.405 23.977C10.0118 23.9804 9.63285 23.8292 9.34995 23.556L1.68795 15.9C0.657711 14.8677 0.0791016 13.4689 0.0791016 12.0105C0.0791016 10.552 0.657711 9.15322 1.68795 8.12095L9.35995 0.443953C9.56973 0.234037 9.83706 0.0910666 10.1281 0.0331324C10.4192 -0.0248017 10.7209 0.00490445 10.9951 0.118492C11.2692 0.232079 11.5036 0.424443 11.6684 0.671242C11.8332 0.918041 11.9211 1.20818 11.9209 1.50495Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next"><svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0791016 22.5C0.0794517 22.1023 0.237717 21.7211 0.519102 21.44L8.1911 13.768C8.42332 13.5359 8.60753 13.2602 8.7332 12.9569C8.85888 12.6535 8.92357 12.3284 8.92357 12C8.92357 11.6717 8.85888 11.3465 8.7332 11.0432C8.60753 10.7398 8.42332 10.4642 8.1911 10.232L0.529101 2.56502C0.255864 2.28211 0.104673 1.90321 0.10809 1.50992C0.111508 1.11662 0.269262 0.740401 0.547374 0.462289C0.825486 0.184177 1.2017 0.0264236 1.595 0.0230059C1.9883 0.0195883 2.3672 0.17078 2.6501 0.444017L10.3121 8.10502C11.3423 9.13728 11.9209 10.5361 11.9209 11.9945C11.9209 13.4529 11.3423 14.8518 10.3121 15.884L2.6401 23.556C2.43062 23.7656 2.16374 23.9085 1.87315 23.9666C1.58255 24.0247 1.28126 23.9954 1.00729 23.8824C0.73332 23.7695 0.498952 23.5779 0.33376 23.3319C0.168567 23.0858 0.0799539 22.7964 0.0791016 22.5Z" fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="who-we" id="who-we">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">
+                    Что мы можем сделать
+                </h2>
+                <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">За 8-летний опыт нашей работы мы набрались большого опыта в разработке интернет-магазинов и имеем огромное количество наработок необходимого функционала</p>
+                <ul class="who-we__list is-shop">
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-01.png" alt="">
+                            </div>
+                            <div class="list-item__title">Современный и стильный дизайн</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-1" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-02.png" alt="">
+                            </div>
+                            <div class="list-item__title">Адаптация под мобильные устройства</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-2" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-03.png" alt="">
+                            </div>
+                            <div class="list-item__title">Высокая скорость работы</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-3" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-04.png" alt="">
+                            </div>
+                            <div class="list-item__title">Быстрое поднятие в ТОП Google и Яндекс</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-4" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-05.png" alt="">
+                            </div>
+                            <div class="list-item__title">Удобный каталог товаров</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-5" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-06.png" alt="">
+                            </div>
+                            <div class="list-item__title">Стильная карточка товара</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-6" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-07.png" alt="">
+                            </div>
+                            <div class="list-item__title">Фильтрация товаров по характеристикам</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-7" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-08.png" alt="">
+                            </div>
+                            <div class="list-item__title">Функционал торговых предложений</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-8" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-09.png" alt="">
+                            </div>
+                            <div class="list-item__title">Функциональная корзина</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-9" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-9" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-10.png" alt="">
+                            </div>
+                            <div class="list-item__title">Полноценное оформление заказа</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-10" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-11.png" alt="">
+                            </div>
+                            <div class="list-item__title">Личный кабинет пользователя</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-11" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-11" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-12.png" alt="">
+                            </div>
+                            <div class="list-item__title">Просчет стоимости доставки</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-12" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-13.png" alt="">
+                            </div>
+                            <div class="list-item__title">Online оплата</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-13" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-13" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-14.png" alt="">
+                            </div>
+                            <div class="list-item__title">Удобное наполнение каталога товарами</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-14" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-14" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-15.png" alt="">
+                            </div>
+                            <div class="list-item__title">Синхронизация
+                                с 1С-Бухгалтерией</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-15" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-15" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-16.png" alt="">
+                            </div>
+                            <div class="list-item__title">Синхронизация с AmoCRM и Битрикс24</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-16" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-16" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-17.png" alt="">
+                            </div>
+                            <div class="list-item__title">Несколько видов цен</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-17" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-17" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-18.png" alt="">
+                            </div>
+                            <div class="list-item__title">Отображение кол-ва товаров на складах</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-18" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-18" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-19.png" alt="">
+                            </div>
+                            <div class="list-item__title">Надежная защита от взлома</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-19" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-19" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="list-item__wrapper">
+                            <div class="list-item__img">
+                                <img src="@img/v-20.png" alt="">
+                            </div>
+                            <div class="list-item__title">Простое обслуживание интернет-магазина</div>
+                            <div class="list-item__descr">За 8-летний опыт нашей работы мы набрались большого опыта в разработке</div>
+                            <div class="list-item__example">
+                                <span>пример</span>
+                                <div class="list-item__galery">
+                                    <img data-fancybox="gallery-20" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+                                    <img data-fancybox="gallery-20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZt0h5A35LHrauX4SLMDBlYbuwBclkGxrMkKf4JxYhyRfNNPi-boQwC3na3IgY4WI3AZo&usqp=CAU" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects-section" id="projects-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">
+                    Наши проекты
+                </h2>
+                <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">Разработка сайтов — основная специализация нашей компании. Мы делаем свою работу так, чтобы её не стыдно было показать в портфолио</p>
+                <div class="works-list">
+                    <a href="./files/kaz-cink.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-right" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-01.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/lin-od.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-down" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-02.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-up" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-03.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/qazaq-str.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-left" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-04.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/cf-moto.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-up" data-aos-duration="800">
+
+                        <div class="image-container">
+                            <img src="@img/work-05.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-right" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-06.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/elitnyi-stroitel.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-down" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-07.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/benton.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-left" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-08.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/ukkz.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-down" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-09.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/kemont.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-left" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-10.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <div class="works-list__item large" data-aos="fade-left" data-aos-duration="800">
+                        <div class="rewiews__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-02.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Фаизова Марина</h5>
+                                            <span class="user__from">Маркетолог ТОО «УККЗ»</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p> Я представитель ТОО «Усть-Каменогорского конденсаторного завода», который в свою очередь является лидером конденсаторостроения в СНГ.
+                                            К агентству «WeMake» мы обратились в поисках лучших решений и идей для расширения и продвижения нашего бизнеса!
+                                            Считаем очень верным решением сотрудничать с ними.
+                                            Они не только произвели редизайн сайта компании, но и занимались его продвижением на площадках Google и Яндекс еще до запуска. «WeMake» отметили технические моменты, составили большой список рекомендаций и требований.
+                                            Стоит отметить, что у нас отличная команда программистов, но ребята не сильны в SEO. Поэтому мы рады, что вовремя обратились за помощью, а не спустя время, когда могли потерять львиную долю трафика.
+                                            Свои обязательства выполняют. Смело можем рекомендовать и рекомендуем!</p>
+                                        <div class="slide__links">
+                                            <a href="#" class="slide-video">смотреть отзыв</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-05.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Марлен</h5>
+                                            <span class="user__from">Маркетолог ТОО «Qazaqstroy»</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p>Мы полностью в восторге от совместной работы!
+                                            На протяжении 3-х с лишним лет, маркетинговое агентство WeMake для нас разработало и успешно запустило несколько крупных проектов!
+                                            Сложно найти компанию, которая на другой стороне так же болеет за дело, как собственник компании!
+                                            Помимо высокого профессионализма, они отличаются максимальной вовлеченностью в проект, честностью. Они способны выжать максимум из доступных ресурсов!
+                                            Благодаря их работе, значительно поднимается конверсия сайта и приходит довольно большое количество конечных покупателей.
+                                            Отдельно хочется отметить, что они адекватно относятся к изменениям в нашей сфере бизнеса и быстро реагируют на них, что позволяет повышать эффективность нашей рекламы!
+                                            Рекомендуем агентство WeMake к сотрудничеству!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-03.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Тимур Нупин</h5>
+                                            <span class="user__from">Директор по развитию бизнеса ТОО «Линия Одежды»</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p>Благодарим маркетинговое агентство «WeMake» за многолетнюю результативную работу! За столь долгий срок совместной работы, они стали настоящими партнерами, что можно смело сказать, что «WeMake» часть нашей команды!
+                                            За эти годы мы не раз убеждались, что «WeMake» — надежная компания с квалифицированными и ответственными сотрудниками в штате.
+                                            Работа с агентством началась с разработки нашего сайта lino.kz. И на протяжении 4-х лет они занимаются обслуживанием и SEO продвижением интернет-магазина.
+                                            Наша Компания «Линия одежды» занимается продажей средств индивидуальной защиты, для обеспечения безопасного производства. Здоровье человека – очень ценный ресурс.
+                                            Благодаря совместной работе агентства, наполнение сайта осуществляется быстро и качественно! Конверсия сайта ежегодно растёт, а сотни тысяч людей защищены на своих производственных объектах!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-01.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Ольга Иванова</h5>
+                                            <span class="user__from">Генеральный директор TerraSport</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p>Я обратилась в агентство «WeMake» с предложением разработать сайт для нашего Фитнес клуба.
+                                            Для нас было важно найти компанию, которой можно доверять, которая будет понимать особенности нашего бизнеса. И мы точно не ошиблись, выбрав в качестве исполнителя «WeMake»!
+                                            Они не только создали стильный сайт с доступным интерфейсом, но и наполнило его всей необходимой информацией о нашем фитнес - клубе. Посетители сайта так же могут самостоятельно записаться на первую пробную тренировку, что значительно облегчает работу нашему администратору!
+                                            Также для удобства работы клуба, ребята внедрили CRM систему и автоматизацию 1С! Что в свою очередь очень помогает при ведении бизнеса!
+                                            Выражаем огромную благодарность и признательность маркетинговому агентству «WeMake» за качественную работу! Все работы выполнены в срок, адекватно относились к пожеланиям и корректировкам!</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-04.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Камзин Ерлан</h5>
+                                            <span class="user__from">Генеральный директор</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p>Компания "Элитные строители" выражает признательность компании «WeMake» — за разработку крутого LandingPage - www.elitnyestroiteli.kz
+                                            За быстрое его продвижение в Google в ТОП 5!!!
+                                            За время совместной работы специалисты показали себя слаженной командой, которая способна следовать намеченной стратегии, оставаясь при этом гибкой и всегда реагируя на новые вызовы. Они не обещают золотых гор, и быстрого движения трафика! Они поставили реальный план и выполнили его!
+                                            Общение с менеджером было быстрым и эффективным. Внимательно и с уважением относились к нашим требованиям и корректировкам! И выполнили свою работу на все сто.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide__head">
+                                        <div class="user__image">
+                                            <img src="@img/review-logo-06.png" alt="">
+                                        </div>
+                                        <div class="user__info">
+                                            <h5 class="user__name">Ислам</h5>
+                                            <span class="user__from">Старший маркетолог</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide__body">
+                                        <p>
+                                            Мы столкнулись с проблемами работы сайта и нам нужно было что-то решать.
+                                            Рассматривали большое количество seo-компаний. Кто-то обещал золотых гор, другие придумывали разные схемы для увеличения чека. Но спустя время один знакомый порекомендовал «WeMake».
+                                            Они сделали аудит существующего сайта. В результате по их предложенной схеме начали работу. Обновили внутренний и внешний функционал прежнего сайта, чтобы сохранить накопленную аналитику.
+                                            Благодарим маркетинговое агентство «WeMake» за работу! В итоге мы полностью довольны полученным сайтом и ни разу не пожалели, что сделали выбор в пользу вашего агентства.
+                                            Все работы выполнены в срок, качественно и профессионально! Отдельное спасибо за то, что учли все напиши пожелания и мы получили то, что хотели, даже больше. Ребята оставили массу рекомендаций по продвижению и работе с сайтом!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slider__footer">
+                                <a href="#about-section" class="btn fillBtn">Все отзывы</a>
+                                <div class="slider-timer-nav">
+                                    <div class="swiper-button-prev">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.9473 1.00241C11.9471 1.26753 11.8416 1.52172 11.654 1.70907L6.5393 6.82374C6.38449 6.97851 6.26168 7.16226 6.1779 7.3645C6.09411 7.56674 6.05099 7.7835 6.05099 8.00241C6.05099 8.22131 6.09411 8.43808 6.1779 8.64031C6.26168 8.84255 6.38449 9.0263 6.5393 9.18107L11.6473 14.2891C11.8295 14.4777 11.9303 14.7303 11.928 14.9925C11.9257 15.2547 11.8205 15.5055 11.6351 15.6909C11.4497 15.8763 11.1989 15.9815 10.9367 15.9837C10.6745 15.986 10.4219 15.8852 10.2333 15.7031L5.1253 10.5991C4.43847 9.9109 4.05273 8.97834 4.05273 8.00607C4.05273 7.0338 4.43847 6.10125 5.1253 5.41307L10.24 0.295074C10.3798 0.15513 10.558 0.0598158 10.7521 0.0211931C10.9461 -0.0174296 11.1473 0.00237445 11.33 0.0780994C11.5128 0.153824 11.669 0.282067 11.7789 0.446599C11.8888 0.611132 11.9474 0.80456 11.9473 1.00241V1.00241Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.05273 15.0003C4.05297 14.7352 4.15848 14.481 4.34607 14.2937L9.46073 9.179C9.61555 9.02423 9.73835 8.84048 9.82214 8.63825C9.90592 8.43601 9.94905 8.21924 9.94905 8.00034C9.94905 7.78143 9.90592 7.56467 9.82214 7.36243C9.73835 7.16019 9.61555 6.97644 9.46073 6.82167L4.35273 1.71034C4.17058 1.52173 4.06978 1.26913 4.07206 1.00694C4.07434 0.744739 4.17951 0.493926 4.36492 0.308518C4.55032 0.12311 4.80114 0.0179412 5.06333 0.0156628C5.32553 0.0133844 5.57813 0.114179 5.76673 0.296337L10.8747 5.40367C11.5616 6.09185 11.9473 7.0244 11.9473 7.99667C11.9473 8.96894 11.5616 9.9015 10.8747 10.5897L5.76007 15.7043C5.62041 15.8441 5.4425 15.9393 5.24877 15.9781C5.05503 16.0168 4.85417 15.9973 4.67153 15.922C4.48888 15.8466 4.33263 15.7189 4.22251 15.5549C4.11238 15.3909 4.0533 15.1979 4.05273 15.0003V15.0003Z" fill="white"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="slider-timer">
+                                        <svg class="origami" width="48" height="48" viewBox="-3 -3 41 41">
+                                            <g class="slider-timer-path" style="animation-duration: 6s;">
+                                                <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-right" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-11.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                    <a href="./files/video-one.mp4" class="works-list__item js-modal-btn" data-fancybox data-width="640" data-height="640" data-aos="fade-up" data-aos-duration="800">
+                        <div class="image-container">
+                            <img src="@img/work-12.jpg" alt="">
+                            <div class="image-container__shape"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="all-project" data-aos="fade-in" data-aos-duration="800">
+                    <a href="https://www.instagram.com/wemake_kz/" class="btn fillBtn" style="margin:auto;">Больше проектов в Instagram</a>
+                </div>
+                <div class="bg-wrap">
+                    <div class="blue-bg"></div>
+                </div>
+            </div>
+        </section>
+        <section class="why-we" id="why-we">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">
+                    Почему мы
+                </h2>
+                <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">Разработка сайтов — основная услуга нашей компании. Наши специалисты стараются разрабатывать сайты по самым последним технологиям и трендам дизайна.</p>
+                <ul class="why-we__list">
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="list-item__num">.01</div>
+                        <div class="list-item__title">Работаем на результат</div>
+                        <div class="list-item__descr">Делаем такие проекты, чтобы не стыдно было поставить в портфолио</div>
+                    </li>
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                        <div class="list-item__num">.02</div>
+                        <div class="list-item__title">Не срываем сроки</div>
+                        <div class="list-item__descr">Для защиты клиента работаем по договору, в котором указываем все сроки</div>
+                    </li>
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                        <div class="list-item__num">.03</div>
+                        <div class="list-item__title">Не завышаем стоимость
+                        </div>
+                        <div class="list-item__descr">Рассчитываем проекты по определенной формуле, понятной клиентам</div>
+                    </li>
+                    <li class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                        <div class="list-item__num">.04</div>
+                        <div class="list-item__title">Гарантируем качество</div>
+                        <div class="list-item__descr">Даем гарантию на свою работу более 1 года
+                            при определенных условиях</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="marquee-section" id="marquee-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">Нам доверяют</h2>
+                <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">За 8 лет успешной работы в сфере IT индустрии, мы разработали более 300 проектов для компаний различного уровня: от микро бизнеса до крупнейших корпораций</p>
+            </div>
+            <div class='marquee'>
+                <div class="marquee__wrapper">
+                    <img src="@img/clients-01.svg" alt="">
+                    <img src="@img/clients-02.svg" alt="">
+                    <img src="@img/clients-03.svg" alt="">
+                    <img src="@img/clients-04.svg" alt="">
+                    <img src="@img/clients-05.svg" alt="">
+                    <img src="@img/clients-06.svg" alt="">
+                    <img src="@img/clients-07.svg" alt="">
+                    <img src="@img/clients-08.svg" alt="">
+                    <img src="@img/clients-09.svg" alt="">
+                    <img src="@img/clients-10.svg" alt="">
+                    <img src="@img/clients-11.svg" alt="">
+                    <img src="@img/clients-12.svg" alt="">
+                    <img src="@img/clients-13.svg" alt="">
+                    <img src="@img/clients-14.svg" alt="">
+                    <img src="@img/clients-15.svg" alt="">
+                    <img src="@img/clients-16.svg" alt="">
+                    <img src="@img/clients-17.svg" alt="">
+                    <img src="@img/clients-18.svg" alt="">
+                    <img src="@img/clients-19.svg" alt="">
+                    <img src="@img/clients-20.svg" alt="">
+                    <img src="@img/clients-21.svg" alt="">
+                    <img src="@img/clients-22.svg" alt="">
+                    <img src="@img/clients-23.svg" alt="">
+                    <img src="@img/clients-24.svg" alt="">
+                    <img src="@img/clients-25.svg" alt="">
+                    <img src="@img/clients-26.svg" alt="">
+                    <img src="@img/clients-27.svg" alt="">
+                    <img src="@img/clients-28.svg" alt="">
+                    <img src="@img/clients-29.svg" alt="">
+                    <img src="@img/clients-30.svg" alt="">
+                    <img src="@img/clients-31.svg" alt="">
+                    <img src="@img/clients-32.svg" alt="">
+                    <img src="@img/clients-33.svg" alt="">
+                    <img src="@img/clients-34.svg" alt="">
+                    <img src="@img/clients-35.svg" alt="">
+                    <img src="@img/clients-36.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="about-section" id="about-section">
+            <div class="container">
+                <div class="about-section__wrapper">
+                    <div class="about-section__block">
+                        <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">О нас говорят</h2>
+                        <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">Мы очень сильно ценим свою репутацию и переживаем о том - что о нас скажут наши клиенты по окончанию сотрудничества</p>
+                        <div class="about-section__block-btns" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                            <a href="#" data-modal-btn="3" class="btn fillBtn">Оставить отзыв</a>
+                            <div class="slider-timer-nav">
+                                <div class="swiper-button-prev outside">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9473 1.00241C11.9471 1.26753 11.8416 1.52172 11.654 1.70907L6.5393 6.82374C6.38449 6.97851 6.26168 7.16226 6.1779 7.3645C6.09411 7.56674 6.05099 7.7835 6.05099 8.00241C6.05099 8.22131 6.09411 8.43808 6.1779 8.64031C6.26168 8.84255 6.38449 9.0263 6.5393 9.18107L11.6473 14.2891C11.8295 14.4777 11.9303 14.7303 11.928 14.9925C11.9257 15.2547 11.8205 15.5055 11.6351 15.6909C11.4497 15.8763 11.1989 15.9815 10.9367 15.9837C10.6745 15.986 10.4219 15.8852 10.2333 15.7031L5.1253 10.5991C4.43847 9.9109 4.05273 8.97834 4.05273 8.00607C4.05273 7.0338 4.43847 6.10125 5.1253 5.41307L10.24 0.295074C10.3798 0.15513 10.558 0.0598158 10.7521 0.0211931C10.9461 -0.0174296 11.1473 0.00237445 11.33 0.0780994C11.5128 0.153824 11.669 0.282067 11.7789 0.446599C11.8888 0.611132 11.9474 0.80456 11.9473 1.00241V1.00241Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next outside">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.05273 15.0003C4.05297 14.7352 4.15848 14.481 4.34607 14.2937L9.46073 9.179C9.61555 9.02423 9.73835 8.84048 9.82214 8.63825C9.90592 8.43601 9.94905 8.21924 9.94905 8.00034C9.94905 7.78143 9.90592 7.56467 9.82214 7.36243C9.73835 7.16019 9.61555 6.97644 9.46073 6.82167L4.35273 1.71034C4.17058 1.52173 4.06978 1.26913 4.07206 1.00694C4.07434 0.744739 4.17951 0.493926 4.36492 0.308518C4.55032 0.12311 4.80114 0.0179412 5.06333 0.0156628C5.32553 0.0133844 5.57813 0.114179 5.76673 0.296337L10.8747 5.40367C11.5616 6.09185 11.9473 7.0244 11.9473 7.99667C11.9473 8.96894 11.5616 9.9015 10.8747 10.5897L5.76007 15.7043C5.62041 15.8441 5.4425 15.9393 5.24877 15.9781C5.05503 16.0168 4.85417 15.9973 4.67153 15.922C4.48888 15.8466 4.33263 15.7189 4.22251 15.5549C4.11238 15.3909 4.0533 15.1979 4.05273 15.0003V15.0003Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                                <div class="slider-timer">
+                                    <svg class="origami" width="48" height="48" viewBox="-3 -3 41 41">
+                                        <g class="slider-timer-path" style="animation-duration: 6s;">
+                                            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section__slider swiper" data-aos="fade-left" data-aos-duration="800">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Я представитель ТОО «Усть-Каменогорского конденсаторного завода», который в свою очередь является лидером конденсаторостроения в СНГ.
+                                    К агентству «WeMake» мы обратились в поисках лучших решений и идей для расширения и продвижения нашего бизнеса!
+                                    Считаем очень верным решением сотрудничать с ними.
+                                    Они не только произвели редизайн сайта компании, но и занимались его продвижением на площадках Google и Яндекс еще до запуска. «WeMake» отметили технические моменты, составили большой список рекомендаций и требований.
+                                    Стоит отметить, что у нас отличная команда программистов, но ребята не сильны в SEO. Поэтому мы рады, что вовремя обратились за помощью, а не спустя время, когда могли потерять львиную долю трафика.
+                                    Свои обязательства выполняют. Смело можем рекомендовать и рекомендуем!
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-02.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Фаизова Марина</div>
+                                        <div class="review__info-descr">Маркетолог ТОО «УККЗ»</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Мы полностью в восторге от совместной работы!
+                                    На протяжении 3-х с лишним лет, маркетинговое агентство WeMake для нас разработало и успешно запустило несколько крупных проектов!
+                                    Сложно найти компанию, которая на другой стороне так же болеет за дело, как собственник компании!
+                                    Помимо высокого профессионализма, они отличаются максимальной вовлеченностью в проект, честностью. Они способны выжать максимум из доступных ресурсов!
+                                    Благодаря их работе, значительно поднимается конверсия сайта и приходит довольно большое количество конечных покупателей.
+                                    Отдельно хочется отметить, что они адекватно относятся к изменениям в нашей сфере бизнеса и быстро реагируют на них, что позволяет повышать эффективность нашей рекламы!
+                                    Рекомендуем агентство WeMake к сотрудничеству!
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-05.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Марлен</div>
+                                        <div class="review__info-descr">Маркетолог ТОО «Qazaqstroy»</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Благодарим маркетинговое агентство «WeMake» за многолетнюю результативную работу! За столь долгий срок совместной работы, они стали настоящими партнерами, что можно смело сказать, что «WeMake» часть нашей команды!
+                                    За эти годы мы не раз убеждались, что «WeMake» — надежная компания с квалифицированными и ответственными сотрудниками в штате.
+                                    Работа с агентством началась с разработки нашего сайта lino.kz. И на протяжении 4-х лет они занимаются обслуживанием и SEO продвижением интернет-магазина.
+                                    Наша Компания «Линия одежды» занимается продажей средств индивидуальной защиты, для обеспечения безопасного производства. Здоровье человека – очень ценный ресурс.
+                                    Благодаря совместной работе агентства, наполнение сайта осуществляется быстро и качественно! Конверсия сайта ежегодно растёт, а сотни тысяч людей защищены на своих производственных объектах!
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-03.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Тимур Нупин</div>
+                                        <div class="review__info-descr">Директор по развитию бизнеса ТОО «Линия Одежды»</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Я обратилась в агентство «WeMake» с предложением разработать сайт для нашего Фитнес клуба.
+                                    Для нас было важно найти компанию, которой можно доверять, которая будет понимать особенности нашего бизнеса. И мы точно не ошиблись, выбрав в качестве исполнителя «WeMake»!
+                                    Они не только создали стильный сайт с доступным интерфейсом, но и наполнило его всей необходимой информацией о нашем фитнес - клубе. Посетители сайта так же могут самостоятельно записаться на первую пробную тренировку, что значительно облегчает работу нашему администратору!
+                                    Также для удобства работы клуба, ребята внедрили CRM систему и автоматизацию 1С! Что в свою очередь очень помогает при ведении бизнеса!
+                                    Выражаем огромную благодарность и признательность маркетинговому агентству «WeMake» за качественную работу! Все работы выполнены в срок, адекватно относились к пожеланиям и корректировкам!
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-01.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Ольга Иванова</div>
+                                        <div class="review__info-descr">Генеральный директор TerraSport</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Компания "Элитные строители" выражает признательность компании «WeMake» — за разработку крутого LandingPage - www.elitnyestroiteli.kz
+                                    За быстрое его продвижение в Google в ТОП 5!!!
+                                    За время совместной работы специалисты показали себя слаженной командой, которая способна следовать намеченной стратегии, оставаясь при этом гибкой и всегда реагируя на новые вызовы. Они не обещают золотых гор, и быстрого движения трафика! Они поставили реальный план и выполнили его!
+                                    Общение с менеджером было быстрым и эффективным. Внимательно и с уважением относились к нашим требованиям и корректировкам! И выполнили свою работу на все сто.
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-04.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Камзин Ерлан</div>
+                                        <div class="review__info-descr">Генеральный директор</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review">
+                                <p class="review__descr">
+                                    Мы столкнулись с проблемами работы сайта и нам нужно было что-то решать.
+                                    Рассматривали большое количество seo-компаний. Кто-то обещал золотых гор, другие придумывали разные схемы для увеличения чека. Но спустя время один знакомый порекомендовал «WeMake».
+                                    Они сделали аудит существующего сайта. В результате по их предложенной схеме начали работу. Обновили внутренний и внешний функционал прежнего сайта, чтобы сохранить накопленную аналитику.
+                                    Благодарим маркетинговое агентство «WeMake» за работу! В итоге мы полностью довольны полученным сайтом и ни разу не пожалели, что сделали выбор в пользу вашего агентства.
+                                    Все работы выполнены в срок, качественно и профессионально! Отдельное спасибо за то, что учли все напиши пожелания и мы получили то, что хотели, даже больше. Ребята оставили массу рекомендаций по продвижению и работе с сайтом!
+                                </p>
+                                <div class="review__info">
+                                    <div class="review__avatar">
+                                        <img src="@img/review-logo-06.png" alt="">
+                                    </div>
+                                    <div class="review__info-wrap">
+                                        <div class="review__info-name">Ислам</div>
+                                        <div class="review__info-descr">Старший маркетолог</div>
+                                    </div>
+                                </div>
+                                <div class="slide__links">
+                                    <a href="#" class="slide-video">смотреть отзыв</a>
+                                    <a href="#" class="slide-review">читать отзыв</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="we-do" id="we-do">
+            <div class="container">
+                <div class="bg-wrap">
+                    <div class="blue-bg"></div>
+                </div>
+                <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">
+                    Мы делаем
+                </h2>
+                <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                <ul class="we-do__list">
+                    <li class="list-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                        <h4 class="list-item__title">Разработка сайтов</h4>
+                        <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" class="list-item__link"><span>Подробнее</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                        <h4 class="list-item__title">Внедрение CRM</h4>
+                        <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" class="list-item__link"><span>Подробнее</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                        <h4 class="list-item__title">Дизайн</h4>
+                        <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" class="list-item__link"><span>Подробнее</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+                        <h4 class="list-item__title">SEO продвижение</h4>
+                        <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" class="list-item__link"><span>Подробнее</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-item" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
+                        <h4 class="list-item__title">Контекстная реклама</h4>
+                        <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" class="list-item__link"><span>Подробнее</span>
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-item grad" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                        <a href="#" class="list-item__wrap">
+                            <h4 class="list-item__title">Интернет магазины</h4>
+                            <p class="list-item__descr">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                            <a href="#" class="list-item__link"><span>Подробнее</span>
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.3715 6.68797L12.3715 2.9931C12.3574 2.37865 12.1071 1.79325 11.6725 1.35865C11.2379 0.92405 10.6525 0.673695 10.038 0.659649L6.34317 0.659647C6.08101 0.664203 5.83112 0.771547 5.64733 0.958559C5.46354 1.14557 5.36055 1.39729 5.36055 1.65949C5.36055 1.9217 5.46354 2.17342 5.64733 2.36043C5.83112 2.54744 6.08101 2.65479 6.34318 2.65934L8.96418 2.65934L0.371903 11.2733C0.184367 11.4608 0.0790108 11.7152 0.0790108 11.9804C0.0790117 12.2456 0.184368 12.5 0.371904 12.6875C0.559441 12.8751 0.813795 12.9804 1.07901 12.9804C1.34423 12.9804 1.59858 12.8751 1.78612 12.6875L10.3718 4.08016L10.3718 6.68797C10.3695 6.82073 10.3936 6.95262 10.4429 7.07595C10.4921 7.19928 10.5654 7.31157 10.6584 7.40628C10.7515 7.50098 10.8625 7.57621 10.985 7.62755C11.1074 7.6789 11.2389 7.70534 11.3716 7.70534C11.5044 7.70534 11.6359 7.6789 11.7583 7.62755C11.8808 7.57621 11.9918 7.50099 12.0849 7.40628C12.1779 7.31158 12.2512 7.19928 12.3004 7.07595C12.3496 6.95263 12.3738 6.82073 12.3715 6.68797Z" fill="#0463F1" />
+                                </svg>
+                            </a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="partners__wrapper">
+                    <div class="partners__block">
+                        <h2 class="section-title" data-aos="fade-right" data-aos-duration="800">Партнеры</h2>
+                        <p class="section-descr" data-aos="fade-right" data-aos-duration="1200">Мы всегда развиваемся и сотрудничаем с лидерами IT индустрии. Ежегодно проходим тестирование и обновляем выданные нам сертификаты.</p>
+                        <a href="#" data-modal-btn='2' class="btn fillBtn" data-aos="fade-up" data-aos-duration="1200">Стать партнером</a>
+                    </div>
+                    <ul class="partners__icons">
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="100">
+                            <img src="@img/amocrm.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="200">
+                            <img src="@img/partner-2.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="300">
+                            <img src="@img/partner-3.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="400">
+                            <img src="@img/partner-4.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="500">
+                            <img src="@img/partner-5.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="600">
+                            <img src="@img/partner-6.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="700">
+                            <img src="@img/partner-7.svg" alt="">
+                        </li>
+                        <li class="partners__icon" data-aos="fade-in" data-aos-duration="800" data-aos-delay="800">
+                            <img src="@img/partner-8.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="warranty" id=warranty>
+            <div class="box-shadow"></div>
+            <div class="blue-bg"></div>
+            <div class="container">
+                <div class="warranty__wrapper" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="warranty__text">Наша команда гарантирует результат и никогда не бросает клиента на пол пути до победного результата</p>
+                    <img src="@img/warranty.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="form-section" id="form-section">
+            <div class="container">
+                <div class="form-section__wrapper">
+                    <div class="form-section__block">
+                        <h3 class="form-section__title" data-aos="fade-right" data-aos-duration="1200">Есть крутая идея?<br> Можем воплотить в жизнь!</h3>
+                        <a href="mailto:info@wemake.kz" class="form-section__link" data-aos="fade-up" data-aos-duration="1200">info@wemake.kz</a>
+                    </div>
+                    <div class="form-section__form-block" data-aos="fade-left" data-aos-duration="1200">
+                        <form action="#" id="section-form">
+                            <div class="section-form__body">
+                                <h4 class="form__title">Оставьте контакты и мы перезвоним</h4>
+                                <div class="styles-label">
+                                    <input class="styles-text-input" type="text" autocomplete="off" name="user-name" data-styles-field placeholder=" " required>
+                                    <span class="styles-text">Имя</span>
+                                </div>
+                                <div class="styles-label">
+                                    <input class="styles-text-input" type="tel" value="+7 (" autocomplete="off" name="user-phone" data-styles-field placeholder=" " required>
+                                    <span class="styles-text">Телефон</span>
+                                </div>
+                                <div class="form__agreement">
+                                    <p>Согласен на <a href="privacy.html" target="_blank">обработку персональных данных</a></p>
+                                </div>
+                                <button class="btn submit-btn">Отправить</button>
+                            </div>
+                            <div class="sucsesful-submit">
+                                <div class="sucsesful-submit__ico">
+                                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.9852 0.0698236C49.9317 0.999324 43.1634 2.87857 35.7352 6.52532C29.2082 9.72957 24.5507 13.0191 19.2707 18.1538C13.8022 23.4716 9.82894 28.9458 6.46694 35.7936C3.29894 42.2466 1.37644 48.5736 0.313688 56.0436C-0.104562 58.9838 -0.104562 68.8533 0.313688 71.7936C1.38269 79.3083 3.30519 85.6261 6.47619 92.0436C12.8367 104.917 22.8172 114.939 35.4852 121.173C40.4187 123.6 43.3962 124.71 48.2352 125.923C60.5642 129.016 72.9572 128.469 85.1102 124.296C88.6282 123.088 95.6239 119.605 98.8602 117.449C106.503 112.359 113.276 105.434 118.209 97.6686C118.864 96.6373 120.218 94.1503 121.217 92.1418C133.534 67.3751 128.389 37.5526 108.452 18.1576C103.2 13.0481 98.6207 9.81507 91.9852 6.53082C85.8054 3.47207 79.6084 1.53507 72.7652 0.523074C70.3314 0.163074 61.0502 -0.142176 58.9852 0.0698236ZM72.7352 8.65082C88.4292 11.2881 101.692 19.8623 110.519 33.0786C114.976 39.7516 117.918 47.3823 119.275 55.7936C119.894 59.6288 119.894 68.2083 119.275 72.0436C116.581 88.7361 107.444 102.597 93.2352 111.547C87.1507 115.379 79.8192 118.065 71.9852 119.333C68.1364 119.955 59.5667 119.953 55.7352 119.329C39.5429 116.693 26.1459 108.15 17.2014 94.7586C12.7442 88.0856 9.80269 80.4548 8.44519 72.0436C7.82544 68.2026 7.82619 59.6261 8.44669 55.7936C10.4567 43.3798 15.6742 33.0826 24.3492 24.4076C33.8364 14.9203 45.8764 9.30257 59.3602 8.07232C62.0647 7.82557 69.8197 8.16107 72.7352 8.65082ZM94.7034 39.9898C94.4109 40.1568 84.0852 48.8436 71.7577 59.2936C59.4299 69.7436 49.2069 78.3153 49.0394 78.3418C48.8722 78.3683 45.4164 74.5233 41.3602 69.7976C36.6149 64.2691 33.6424 61.0098 33.0237 60.6573C31.2154 59.6271 28.6609 60.3901 27.6882 62.2508C27.0807 63.4126 27.1739 65.2461 27.8939 66.2963C29.3582 68.4326 45.8099 87.1638 46.6442 87.6446C47.6529 88.2261 49.1162 88.3091 50.1667 87.8448C50.5414 87.6791 56.0539 83.1308 62.4167 77.7376C68.7794 72.3441 79.6629 63.1191 86.6024 57.2376C93.5419 51.3558 99.4764 46.1613 99.7899 45.6941C101.018 43.8641 100.329 41.1758 98.3642 40.1316C97.3754 39.6061 95.5027 39.5336 94.7034 39.9898Z" fill="white" />
+                                    </svg>
+                                </div>
+                                <span class="sucsesful-submit__title">Спасибо за заявку!</span>
+                                <div class="sucsesful-submit__descr">Наши менеджеры обязательно свяжуться с Вами в ближайшее время.</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+            <div class="container">
+                <div class="contact-section__wrapper">
+                    <div class="contact-section__block">
+                        <h3 class="contact-section__main-title" data-aos="fade-right" data-aos-duration="1200">Контакты</h3>
+                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                            <a href="tel:+77775410900" class="phone-link">+7 (777) 541 09 00</a>
+                            <span class="phone_nameplate">Отдел продаж</span>
+                        </p>
+                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                            <a href="tel:+77083858718" class="phone-link">+7 (708) 385 87 18</a>
+                            <span class="phone_nameplate">Бухгалтерия</span>
+                        </p>
+                        <div class="contact-section__emails">
+                            <div class="contact-section__email" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                                <a href="mailto:info@wemake.kz">info@wemake.kz</a>
+                                <span class="email-nameplate">Для новых клиентов</span>
+                            </div>
+                            <div class="contact-section__email" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                                <a href="mailto:208909@inbox.ru">208909@inbox.ru</a>
+                                <span class="email-nameplate">Техническая поддержка</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-section__block second" data-aos="fade-in" data-aos-duration="1200" data-aos-delay="600">
+                        <h5 class="contact-section__title">Корреспонденцию сюда</h5>
+                        <p class="contact-section__descr">Казахстан, г. Усть-Каменогорск, 070000 пр. Ауэзова, 28, офис 417</p>
+                        <a href="" data-modal-btn='4' class="btn ghostBtn">Написать напрямую</a>
+                        <h5 class="contact-section__title">Мы в социальных сетях</h5>
+                        <div class="contact-section__socials">
+                            <a href="" class="social-link">
+                                <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0414 0.0964988C18.492 0.557124 16.4784 2.42087 15.8042 4.94419C15.6881 5.37881 15.6643 5.63675 15.6609 6.49669C15.6586 7.06387 15.6786 7.64981 15.7052 7.79869L15.7536 8.0695L15.3302 8.03069C12.5776 7.77862 10.3496 7.14681 8.13212 5.9895C6.08425 4.92069 3.95044 3.24256 2.64206 1.67181C2.44656 1.43712 2.25863 1.25437 2.22438 1.26581C2.19019 1.27719 2.05462 1.52981 1.92306 1.82725C1.02531 3.85656 1.19287 6.20269 2.36569 8.02481C2.709 8.55812 3.26819 9.18831 3.72256 9.55381L4.19544 9.93419H3.93906C3.39075 9.93419 2.24412 9.62475 1.6285 9.31069C1.49206 9.24112 1.35756 9.18419 1.32963 9.18419C1.24137 9.18419 1.35819 10.3298 1.50231 10.8776C2.06988 13.0354 3.67144 14.7416 5.7985 15.4547C6.1515 15.5731 6.40037 15.6852 6.35156 15.704C6.06956 15.8122 5.14306 15.8853 4.42344 15.8561L3.6155 15.8233L3.65581 15.9839C3.72444 16.2575 4.18581 17.1339 4.47294 17.5364C5.57763 19.0845 7.381 20.1478 9.14112 20.2889C9.40756 20.3102 9.6255 20.3491 9.6255 20.3752C9.6255 20.4809 8.2245 21.3492 7.36763 21.7747C5.417 22.7431 3.48944 23.1621 1.21956 23.1109L0.0625 23.0849L0.390875 23.2911C0.869125 23.5913 2.318 24.3229 2.96925 24.5929C6.47469 26.0464 10.5673 26.3773 14.4304 25.5197C20.1155 24.2576 24.7924 20.31 27.1546 14.7797C28.1646 12.4151 28.6712 10.0929 28.723 7.59044L28.7463 6.46544L29.1988 6.10175C29.7775 5.63662 30.4277 5.01681 30.9172 4.46356C31.3357 3.99056 31.9485 3.17387 31.9122 3.1375C31.8997 3.12512 31.7106 3.18806 31.4919 3.27744C30.6641 3.61569 28.7431 4.10306 28.4561 4.04775C28.3851 4.03406 28.4364 3.973 28.6221 3.85006C29.0939 3.53787 29.9365 2.67444 30.2946 2.13637C30.6054 1.66912 31.0602 0.753124 31.0623 0.590186C31.0627 0.555686 30.6794 0.715436 30.2105 0.945124C29.3631 1.36031 28.2576 1.76037 27.3911 1.96544L26.938 2.07262L26.5591 1.72181C25.0959 0.367186 22.9849 -0.254626 21.0414 0.0964988Z" fill="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="social-link">
+                                <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4062 0.911284C12.7997 0.955097 12.0276 1.07285 11.7187 1.16866C11.1891 1.33297 10.529 1.91897 10.6511 2.11653C10.6735 2.15285 10.7964 2.20197 10.9241 2.22566C11.4973 2.3321 11.9808 2.65728 12.1976 3.0821C12.568 3.80828 12.7346 6.07953 12.5353 7.68741C12.4036 8.75022 12.3479 8.9966 12.1527 9.38197C11.6301 10.4133 10.4171 9.56985 9.09912 7.25853C8.62437 6.42603 7.29837 3.7791 7.00362 3.07553C6.64549 2.22085 6.53212 2.06347 6.12493 1.85628L5.78124 1.68141L3.18749 1.70003C0.845244 1.71685 0.574119 1.72941 0.391181 1.82935C0.101182 1.98785 -0.0226935 2.20422 0.0156815 2.4856C0.0833065 2.98203 1.57637 6.10303 2.83299 8.37491C4.34924 11.1162 6.35399 13.9708 7.80674 15.457C9.06824 16.7477 11.0129 18.0102 12.5813 18.5569C13.6197 18.9189 14.1965 19.0047 15.8437 19.0425C17.4769 19.0799 17.9461 19.0328 18.2922 18.7967C18.5772 18.6023 18.6654 18.334 18.7186 17.4999C18.7711 16.6767 18.9319 15.9708 19.1529 15.5938C19.3478 15.2612 19.7716 14.877 19.9533 14.868C20.5877 14.8367 20.9429 15.1003 22.2681 16.5858C23.5106 17.9785 23.9698 18.3884 24.6562 18.7171C24.9656 18.8652 25.3453 19.0155 25.5 19.051C25.8749 19.137 30.9369 19.0403 31.2637 18.9408C31.5873 18.8423 31.9359 18.5005 31.9438 18.2738C31.9651 17.6693 31.8944 17.4181 31.5524 16.8823C31.0087 16.0305 30.3092 15.2357 28.7121 13.6547C26.9401 11.9006 26.8164 11.7374 26.8139 11.1505C26.8117 10.6579 27.042 10.2794 28.5976 8.21866C30.7919 5.31166 31.6706 3.90753 31.9149 2.9176C32.0586 2.33522 31.9766 2.05478 31.6069 1.86435C31.259 1.68516 30.7281 1.66816 27.4459 1.73135L24.8606 1.78116L24.6647 2.00791C24.5569 2.1326 24.346 2.54041 24.1959 2.91416C23.4146 4.86066 21.8855 7.53753 20.8492 8.77322C20.4444 9.25591 19.8153 9.74991 19.6054 9.74991C19.3125 9.74991 19.0709 9.56072 18.8878 9.18791L18.7187 8.84366L18.7359 5.59872C18.7512 2.71016 18.7416 2.31897 18.649 2.03622C18.4352 1.38385 18.1705 1.19016 17.2704 1.02753C16.7397 0.931659 14.1871 0.854847 13.4062 0.911284Z" fill="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="social-link">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59577 0.0908593C4.03152 0.591234 1.16277 3.1553 0.286641 6.62361C0.204141 6.95017 0.106453 7.47048 0.0695156 7.77986C-0.0231719 8.5563 -0.0231719 23.4409 0.0695156 24.2174C0.504203 27.8595 3.09552 30.8219 6.62702 31.714C6.95358 31.7965 7.47389 31.8942 7.78327 31.9311C8.5597 32.0238 23.4443 32.0238 24.2208 31.9311C27.5036 31.5393 30.2483 29.3972 31.441 26.296C31.6341 25.794 31.8598 24.8432 31.9345 24.2174C32.0272 23.4409 32.0272 8.5563 31.9345 7.77986C31.5427 4.49705 29.4006 1.7523 26.2995 0.559609C25.7975 0.366547 24.8466 0.140797 24.2208 0.0661093C23.3653 -0.0360157 8.34002 -0.0136407 7.59577 0.0908593ZM26.1003 4.16467C26.9112 4.43736 27.561 5.0873 27.8355 5.90036C27.9655 6.28536 27.9701 7.04948 27.845 7.46211C27.3323 9.15205 25.3152 9.87748 23.8441 8.90098C22.9815 8.32842 22.524 7.30898 22.684 6.31573C22.8443 5.3198 23.5266 4.49817 24.4566 4.18123C24.8861 4.0348 25.69 4.02673 26.1003 4.16467ZM24.9328 6.02967C24.5729 6.2253 24.4318 6.75542 24.6506 7.08942C25.0776 7.74117 26.0645 7.45761 26.0645 6.68323C26.0645 6.1258 25.4301 5.75936 24.9328 6.02967ZM17.377 7.33936C19.2357 7.64936 20.8733 8.48886 22.1925 9.80811C23.8695 11.485 24.7498 13.6162 24.7498 15.9986C24.7498 18.381 23.8695 20.5122 22.1925 22.1891C20.5156 23.866 18.3845 24.7464 16.002 24.7464C13.6196 24.7464 11.4885 23.866 9.81152 22.1891C8.13458 20.5122 7.2542 18.381 7.2542 15.9986C7.2542 13.6162 8.13458 11.485 9.81152 9.80811C11.1096 8.50998 12.7495 7.66023 14.5645 7.34523C15.207 7.23367 16.7244 7.23055 17.377 7.33936ZM14.792 9.22355C11.532 9.81248 9.12702 12.6887 9.12702 15.9986C9.12702 20.2397 12.9963 23.5039 17.1623 22.7774C21.7426 21.9787 24.2346 16.9718 22.1059 12.8446C20.7343 10.1852 17.7226 8.69417 14.792 9.22355Z" fill="white" />
+                                </svg>
+
+                            </a>
+                            <a href="" class="social-link">
+                                <svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.625 0.0986532C7.53531 0.597841 5.59956 2.58165 5.02094 5.8419C4.94263 6.28309 4.91437 7.01672 4.89156 9.20315L4.86231 12H2.55619H0.25V14.8438V17.6875H2.5625H4.875V24.8438V32H7.75H10.625V24.8438V17.6875H12.8438C14.0641 17.6875 15.0625 17.6713 15.0625 17.6515C15.0625 17.6317 15.2172 16.3823 15.4062 14.875C15.5953 13.3678 15.75 12.1043 15.75 12.0673C15.75 12.0203 14.9749 12 13.1842 12H10.6184L10.6388 9.4844C10.6568 7.25728 10.6718 6.93653 10.7696 6.68753C11.0141 6.06547 11.3836 5.71622 12.0466 5.48065C12.3718 5.36509 12.5904 5.3504 14.3281 5.32728L16.25 5.30165V2.7739C16.25 0.807466 16.2326 0.240216 16.1719 0.219653C15.9646 0.149403 14.3032 0.0548407 12.8438 0.0301532C11.5764 0.00871572 11.0881 0.0238407 10.625 0.0986532Z" fill="white" />
+                                </svg>
+                            </a>
+                            <a href="" class="social-link">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.8157V25.6314L5.07812 25.6309C10.381 25.6303 10.8284 25.6121 11.9062 25.3529C14.2804 24.782 15.8185 23.3826 16.3257 21.3319C16.5282 20.5131 16.5134 19.2019 16.2922 18.363C15.8788 16.7953 14.9199 15.7366 13.3656 15.1319L12.9328 14.9634L13.4465 14.665C14.1739 14.2424 14.7988 13.5938 15.1219 12.9265C15.4843 12.1777 15.5866 11.6051 15.5431 10.5689C15.4829 9.13681 15.1748 8.35313 14.3504 7.53469C13.7826 6.97113 13.2908 6.68244 12.4482 6.41844C11.2607 6.04631 11.2641 6.0465 5.39062 6.02225L0 6V15.8157ZM20.9171 7.04756C20.8939 7.07075 20.875 7.50688 20.875 8.01681V8.94387H24.8766H28.8783L28.861 7.99075L28.8438 7.03762L24.9015 7.02156C22.7332 7.01269 20.9403 7.02444 20.9171 7.04756ZM9.58 9.47331C10.397 9.64644 11.0104 10.1322 11.2266 10.7769C11.3673 11.1967 11.3708 11.9907 11.2341 12.4439C11.0359 13.1005 10.5963 13.5278 9.8645 13.775C9.49031 13.9014 9.32844 13.9099 6.89062 13.9301L4.3125 13.9514V11.6664V9.38137L6.73438 9.38244C8.59806 9.38331 9.25394 9.40425 9.58 9.47331ZM24.1153 11.0776C22.9946 11.2061 21.7749 11.6494 20.8673 12.2583C20.328 12.6202 19.4086 13.5591 19.0349 14.1297C18.1611 15.4638 17.7843 16.8287 17.7919 18.6314C17.7984 20.1541 18.0589 21.2814 18.6778 22.4666C19.5994 24.2311 21.2844 25.435 23.4316 25.8631C24.112 25.9987 25.9401 26.0139 26.625 25.8896C28.4982 25.5497 29.826 24.6939 30.8052 23.1954C31.1275 22.702 31.5681 21.7863 31.6607 21.4168L31.7011 21.2564H29.985H28.269L28.1501 21.5205C27.7624 22.3819 26.4456 23.0655 25.1693 23.0679C23.1212 23.0718 21.8817 21.9466 21.7106 19.9282L21.6695 19.4439H26.8347H32V18.8477C32 16.1068 31.0217 13.7896 29.2812 12.4074C28.7482 11.9841 27.6455 11.439 26.9688 11.2642C26.0454 11.0256 25.1048 10.9641 24.1153 11.0776ZM25.8326 14.0731C26.2129 14.1474 26.7141 14.3839 27.0089 14.6283C27.478 15.0169 27.9161 15.9112 28.0284 16.7095L28.0702 17.0064H24.8788C21.8808 17.0064 21.6876 16.9997 21.6884 16.897C21.6906 16.6435 21.893 15.9539 22.072 15.5903C22.3919 14.9404 23.0667 14.3839 23.8438 14.1289C24.3334 13.9683 25.1754 13.9446 25.8326 14.0731ZM10.2786 17.0327C11.5566 17.4079 12.125 18.2195 12.125 19.6692C12.125 21.0313 11.5426 21.7958 10.2188 22.1715C9.89831 22.2624 9.44112 22.2816 7.07812 22.3034L4.3125 22.329V19.6006V16.8722L7.10938 16.8979C9.53813 16.9201 9.95525 16.9379 10.2786 17.0327Z" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('./html/footer.html')

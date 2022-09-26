@@ -1412,6 +1412,7 @@ header {
     font-weight: 500;
     font-size: 28px;
     margin-bottom: 8px;
+    color: #fff;
   }
   .list-item__descr {
     transition: color 0.3s ease-in-out;
@@ -2310,5 +2311,108 @@ header {
     &:nth-of-type(12) {
       order: 11;
     }
+  }
+}
+
+.who-we__list.is-shop {
+  .list-item__example {
+    position: relative;
+    overflow: hidden;
+  }
+  .list-item__galery {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  margin-right: -15px;
+  margin-left: -15px;
+  gap: 0;
+  .list-item__wrapper {
+    padding: 30px;
+    background: #2a2a2a;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .list-item {
+    padding: 30px 15px;
+    width: 25%;
+    flex: initial;
+    border: none;
+  }
+  .list-item__title {
+    font-size: 26px;
+    line-height: 140%;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .list-item__descr {
+    font-size: 18px;
+    line-height: 140%;
+    color: #6e6e73;
+    margin-bottom: 8px;
+  }
+  .list-item__example {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: #0463f1;
+    margin-top: auto;
+  }
+  .list-item__img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    img {
+      // width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+}
+
+@media (max-width: 1490px) {
+  .who-we__list.is-shop {
+    .list-item {
+      width: 33.33%;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .who-we__list.is-shop {
+    .list-item {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we__list.is-shop {
+    margin-right: 0;
+    margin-left: 0;
+    .list-item {
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .who-we__list.is-shop .list-item__wrapper {
+    padding: 15px;
+  }
+  .who-we__list.is-shop .list-item__title {
+    font-size: 22px;
+    line-height: 120%;
   }
 }
